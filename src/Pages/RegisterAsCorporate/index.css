@@ -1,0 +1,411 @@
+.registerCorporate{
+    background-color: #0a382b;
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.registerCorporate header a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.registerCorporate header .back_ar{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.registerCorporate header .back_ar img{
+    position: absolute;
+    left:0px;
+}
+.registerCorporate header a span{
+    border: 2px solid #fff;
+    padding: 5px 50px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    border-right: none;
+    transition: all 0.5s ease;
+}
+
+.registerCorporate header .back_ar span{
+    border: 2px solid #fff;
+    padding: 5px 5px 8px 85px;
+    position: relative;
+    left: -150px;
+    border-radius: 0px 20px 20px 0px;
+    color: #fff;
+    border-left: none;
+    transition: all 0.5s ease;
+}
+
+.registerCorporate header img{
+    width: 30px;
+}
+.registerCorporate header a:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+
+.registerCorporate header .back_ar:hover span{
+    visibility: visible;
+    opacity: 1;
+    left:-30px;
+}
+
+.registerCorporate .register1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    right: 150px;
+    top:40px;
+}
+.registerCorporate .register1_ar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    left: 150px;
+    top:40px;
+}
+
+.registerCorporate .register1 header,
+.registerCorporate .register1_ar header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2AF6BC;
+    padding: 6px 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 17px;
+    position: relative;
+    border: 1px solid #707070;
+    opacity: 0.68;
+}
+.registerCorporate .register1 header .icon,
+.registerCorporate .register1_ar header .icon{
+    position: absolute;
+    left: 20px;
+    font-size: 35px;
+    bottom: 0px;
+}
+.registerCorporate .register1 header .text,
+.registerCorporate .register1_ar header .text{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Rubik Dirt',sans-serif;
+}
+.registerCorporate .register1_ar header .text{
+    font-family: changa;
+}
+
+.registerCorporate .register1 .form-container ,
+.registerCorporate .register1_ar .form-container{
+    background-color: #22594e;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid #707070;
+    height: 480px;
+}
+.registerCorporate .register1 .form-container h2,
+.registerCorporate .register1_ar .form-container h2{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid white;
+    margin-bottom: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    padding-bottom: 6px;
+}
+
+.registerCorporate .background2 img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 27%;
+    height: 100%;
+}
+.registerCorporate .background2-ar img{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width: 27%;
+    height: 100%;
+}
+
+.registerCorporate .register1 .form-container .input_ input ,
+.registerCorporate .register1_ar .form-container .input_ input{
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+}
+.registerCorporate .register1_ar .form-container .input_ input{
+    font-size: 17px;
+    text-align: right;
+    font-family: 'Readex Pro', sans-serif;
+}
+.registerCorporate .register1 .form-container .input_ span{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+.registerCorporate .register1_ar .form-container .input_ span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.registerCorporate .register1 .form-container .next,
+.registerCorporate .register1_ar .form-container .next{
+    text-align: right;
+    background-color: #2AF6BC;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    position: relative;
+    border: 2px solid #fff;
+    transition: all 0.5s ease;
+    opacity: 0.68;
+    font-family: 'Readex Pro', sans-serif;
+}
+.registerCorporate .register1 .form-container .next:hover{
+    letter-spacing: 1px;
+}
+
+.registerCorporate .register1 .form-container .submit,
+.registerCorporate .register1_ar .form-container .submit{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: rgb(20, 19, 19) 0px 7px 29px 0px;
+    transition: all 0.5s ease;
+}
+
+.registerCorporate .register1 .form-container .input_1,
+.registerCorporate .register1_ar .form-container .input_1{
+    margin:20px auto ;
+    border: 2px solid #c4f9ae;
+    width: 400px;
+    border-radius: 10px;
+    padding: 0px 20px;
+
+}
+.registerCorporate .register1_ar .error{
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 13px;
+}
+.registerCorporate .register1 .form-container .input_1 label,
+.registerCorporate .register1_ar .form-container .input_1 label{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 10px;
+cursor: pointer;
+}
+.registerCorporate .register1 .form-container .input_1 label p,
+.registerCorporate .register1_ar .form-container .input_1 label p{
+color:#fff;
+font-family: 'Readex Pro', sans-serif;
+}
+.registerCorporate .register1 .form-container .submit:hover ,
+.registerCorporate .register1_ar .form-container .submit:hover{
+    letter-spacing: 1px ;
+    font-weight: 600;
+}
+.register1 .body,
+.register1_ar .body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 350px;
+}
+ .register1 .body::-webkit-scrollbar ,
+ .register1_ar .body::-webkit-scrollbar {
+    display: none;
+  }
+  .register1 .body,
+  .register1_ar .body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.registerCorporate .register1 .form-container .input_ .phone_number input,
+.registerCorporate .register1_ar .form-container.input_ .phone_number input{
+    padding: 10px 50px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    height: 43px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.registerCorporate .register1_ar .form-container .input_ .phone_number input{
+    text-align: right;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 17px;
+    padding:20px ;
+}
+
+/*------------------------------------------------------*/
+@media only screen and (max-width: 1050px){
+    .registerCorporate .background2 img ,
+    .registerCorporate .background2-ar img{
+        display: none;
+    }
+    .registerCorporate .register1 ,
+    .registerCorporate .register1_ar{
+        width: 600px;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+    }
+}
+@media only screen and (max-width: 768px){
+    .registerCorporate header a ,
+    .registerCorporate header .back_ar{
+        display: none;
+    }
+    .registerCorporate .register1 header,
+    .registerCorporate .register1_ar header{
+        padding: 6px 15px;
+        width: 80%;
+        border-radius: 12px;
+    }
+    .registerCorporate .register1 header .icon,
+    .registerCorporate .register1_ar header .icon{
+        position: absolute;
+        left: 20px;
+        font-size: 32px;
+        bottom: 1px;
+}
+.registerCorporate .register1 header .text,
+.registerCorporate .register1_ar header .text{
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+.registerCorporate .register1 .form-container ,
+.registerCorporate .register1_ar .form-container{
+    width: 80%;
+    padding: 10px;
+    border-radius: 40px;
+}
+.registerCorporate .register1 .form-container .next,
+.registerCorporate .register1_ar .form-container .next{
+    position: relative;
+    bottom: 15px;
+}
+}
+
+@media only screen and (max-width: 530px){
+    .registerCorporate .register1 header,
+    .registerCorporate .register1_ar header{
+        padding: 6px 15px;
+        width: 60%;
+        border-radius: 9px;
+    }
+    .registerCorporate .register1 header .icon,
+    .registerCorporate .register1_ar header .icon{
+        position: absolute;
+        left: 10px;
+        font-size: 30px;
+        bottom: 1px;
+}
+.registerCorporate .register1 header .text,
+.registerCorporate .register1_ar header .text{
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+.registerCorporate .register1 .form-container ,
+.registerCorporate .register1_ar .form-container{
+    width: 60%;
+    padding: 10px;
+    border-radius: 30px;
+}
+.registerCorporate .register1 .form-container .input_ input ,
+.registerCorporate .register1_ar .form-container .input_ input{
+    padding: 8px 10px;
+    width: 300px;
+    font-size: 16px;
+}
+.registerCorporate .register1 .form-container .input_ .phone_number input,
+.registerCorporate .register1_ar .form-container.input_ .phone_number input{
+    padding: 8px 50px;
+    width: 300px;
+    font-size: 16px;
+}
+.registerCorporate .register1 .form-container .input_1,
+.registerCorporate .register1_ar .form-container .input_1{
+    padding: 8px 10px;
+    width: 300px;
+    font-size: 16px;
+}
+.registerCorporate .register1 .form-container .next,
+.registerCorporate .register1_ar .form-container .next{
+    position: relative;
+    bottom: 0px;
+    font-size: 16px;
+}
+.registerCorporate .register1 .form-container h2,
+.registerCorporate .register1_ar .form-container h2{
+    font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 430px){
+    .registerCorporate .register1 header,
+    .registerCorporate .register1_ar header{
+        padding: 6px 15px;
+        width: 55%;
+        border-radius: 9px;
+    }
+    .registerCorporate .register1 header .icon,
+    .registerCorporate .register1_ar header .icon{
+        position: absolute;
+        left: 10px;
+        font-size: 28px;
+        bottom: 1px;
+}
+.registerCorporate .register1 header .text,
+.registerCorporate .register1_ar header .text{
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+.registerCorporate .register1 .form-container ,
+.registerCorporate .register1_ar .form-container{
+    width: 55%;
+    padding: 10px;
+    border-radius: 30px;
+}
+}

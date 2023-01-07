@@ -1,0 +1,292 @@
+.visiter{
+    background:#0a382b ;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.visiter .back {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.visiter .back_ar{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.visiter .back img{
+    width: 30px;
+    height: 30px;
+}
+.visiter .back_ar img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+}
+.visiter .back span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -170px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.visiter .back_ar span{
+    border: 2px solid white;
+    padding: 5px 5px 10px 85px;
+    position: relative;
+    left: -180px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+
+.visiter .back:hover.back span{
+    opacity: 1; 
+    visibility: visible;
+    right: -50px;
+}
+.visiter .back_ar:hover.back_ar span{
+    opacity: 1; 
+    visibility: visible;
+    left: -40px;
+}
+.visiter .section2 img{
+    width: 27%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.visiter .section2_ar img{
+    width: 27%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.visiter .section1{
+    background-color: #22594e;
+    width: 500px;
+    height: 550px;
+    text-align: center;
+    position: absolute;
+    right: 300px;
+    top: 30px;
+    border-radius: 50px;
+    padding: 20px;
+    border: 1px solid #707070;
+}
+.visiter .section1_ar{
+    background-color: #22594e;
+    width: 500px;
+    height: 550px;
+    text-align: center;
+    position: absolute;
+    left: 300px;
+    top: 30px;
+    border-radius: 50px;
+    padding: 20px;
+    border: 1px solid #707070;
+}
+
+.visiter .section1 header,
+.visiter .section1_ar header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2AF6BC;
+    padding: 10px 15px;
+    width: 94%;
+    text-align: center;
+    border-radius: 17px;
+    position: relative;
+    opacity: 0.68;
+    margin: 10px auto;
+}
+.visiter .section1 header .icon ,
+.visiter .section1_ar header .icon{
+    position: absolute;
+    left: 20px;
+    font-size: 40px;
+    bottom: 0px;
+}
+.visiter .section1 header .text ,
+.visiter .section1_ar header .text{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.visiter .section1_ar header .text{
+    font-family: changa;
+}
+.visiter .section1 .body ,
+.visiter .section1_ar .body{
+    margin-top: 30px;
+}
+.visiter .section1 input{
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+}
+.visiter .section1_ar input{
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+    text-align: right;
+    font-family: 'Readex Pro', sans-serif;
+}
+.visiter .section1 .body span ,
+.visiter .section1_ar .body span{
+    font-size: 20px;
+    color: #c4f9ae;
+}
+.visiter .section1 .body .error{
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+.visiter .section1_ar .body .error{
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.visiter .section1 .footer button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.visiter .section1_ar .footer button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    font-family: 'Readex Pro', sans-serif;
+}
+.visiter .section1 .footer button:hover{
+    opacity: 0.8;
+}
+
+
+/*-----------------------*/
+@media only screen and (max-width: 1150px){
+    .visiter .section1{
+        background-color: #22594e;
+        width: 500px;
+        height: 550px;
+        text-align: center;
+        position: absolute;
+        right: 120px;
+        top: 30px;
+        border-radius: 50px;
+        padding: 20px;
+        border: 1px solid #707070;
+    }
+    .visiter .section1_ar{
+        position: absolute;
+        left: 120px;
+        top: 30px;
+    }
+}
+@media only screen and (max-width: 910px){
+    .visiter .section2 img ,
+    .visiter .section2_ar img{
+        display: none;
+    }
+    .visiter .section1 ,
+    .visiter .section1_ar{
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+    }
+}
+@media only screen and (max-width: 678px){
+    .visiter .section1{
+        background-color: #22594e;
+        width: 400px;
+        height: 550px;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        border-radius: 50px;
+        padding: 20px;
+        border: 1px solid #707070;
+    }
+    .visiter .section1_ar{
+        background-color: #22594e;
+        width: 400px;
+        height: 550px;
+        top: 50px;
+    }
+    .visiter .back ,
+    .visiter .back_ar{
+        display: none;
+    }
+}
+@media only screen and (max-width: 470px){
+    .visiter .section1 ,
+    .visiter .section1_ar{
+        background-color: #22594e;
+        width: 380px;
+        height: 530px;
+        top: 70px;
+        border-radius: 40px;
+        padding: 20px;
+        border: 1px solid #707070;
+    }
+    .visiter .section1 header .icon ,
+    .visiter .section1_ar header .icon{
+        position: absolute;
+        left: 20px;
+        font-size: 40px;
+        bottom: 0px;
+    }
+    .visiter .section1 .footer button ,
+    .visiter .section1_ar .footer button{
+        position: relative;
+        top: 20px;
+    }
+}
+@media only screen and (max-width: 420px){
+    .visiter .section1 ,
+    .visiter .section1_ar{
+        background-color: #22594e;
+        width: 330px;
+        height: 520px;
+        top: 80px;
+        border-radius: 30px;
+    }
+    .visiter .section1 .footer button,
+    .visiter .section1_ar .footer button{
+        position: relative;
+        bottom: 20px;
+    }
+    .visiter .section1 header .icon ,
+    .visiter .section1_ar header .icon{
+        position: absolute;
+        left: 20px;
+        font-size: 35px;
+        bottom: 3px;
+    }
+}

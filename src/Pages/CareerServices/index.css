@@ -1,0 +1,131 @@
+.careerServices{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.careerServices header a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.careerServices header .back{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.careerServices header .back img{
+    position: absolute;
+    left: 0;
+}
+.careerServices header a img{
+    width: 30px;
+}
+.careerServices header a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.careerServices header .back span{
+    border: 2px solid white;
+    padding: 5px 5px 5px 85px;
+    position: relative;
+    left: -50px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.careerServices header a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.careerServices .career{
+    position: absolute;
+    top: 75%;
+    left: 10.5%;
+    font-size: 25px;
+    color:#c4f9ae;
+    letter-spacing: 1px;
+    font-family:algerian;
+}
+.careerServices .career_ar{
+    position: absolute;
+    top: 75%;
+    right: 10.5%;
+    font-size: 25px;
+    color:#c4f9ae;
+    letter-spacing: 1px;
+    font-family: 'Lemonada', medium;
+}
+
+.careerServices .link ,
+.careerServices .dispal{
+    display: none;
+}
+.careerServices .section2{
+    padding-top:50px ;
+}
+
+@font-face {
+    font-family: "algerian";
+    src: url('../../Assets/fonts/Algerian\ Regular.ttf');
+}
+
+
+@media only screen and (max-width: 1300px){
+    .careerServices .career{
+        left: 4%;
+    }
+    .careerServices .career_ar{
+        right: 4%;
+    }
+}
+@media only screen and (max-width: 1150px){
+
+    .careerServices .section2{
+        padding-top:150px ;
+    }
+
+}
+@media only screen and (max-width: 1050px){
+    .careerServices{
+        position: relative;
+        height: 900px;
+        width: 100%;
+    }
+    .careerServices .career{
+        display: none;
+    }
+    .careerServices .career_ar{
+        display: none;
+    }
+    .careerServices .section2{
+        padding-top:180px ;
+    }
+}
+@media only screen and (max-width: 600px){
+    .careerServices header a ,
+    .careerServices header .back{
+        display: none;
+    }
+    .careerServices .section2{
+        padding-top:40px ;
+    }
+}
+@media only screen and (max-width: 450px){
+    .careerServices .section2{
+        padding-top:20px ;
+        height: 450px;
+    }
+}

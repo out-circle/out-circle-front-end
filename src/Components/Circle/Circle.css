@@ -1,0 +1,306 @@
+
+.circle_ .section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid  #199370;
+    width: 760px;
+    height: 550px;
+    position: absolute;
+    top:8%;
+    right: 200px;
+    border-radius: 50px;
+    overflow-y: scroll;
+    padding-top:430px ;
+    padding-bottom: 10px;
+}
+.circle_ar .section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid  #199370;
+    width: 760px;
+    height: 550px;
+    position: absolute;
+    top:8%;
+    left: 200px;
+    border-radius: 50px;
+    overflow-y: scroll;
+    padding-top:300px ;
+    padding-bottom: 10px;
+}
+.circle_ .section2::-webkit-scrollbar,
+.circle_ar .section2::-webkit-scrollbar{
+    display: none;
+  }
+.circle_ .section2,
+.circle_ar .section2{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.circle_ .section2 a,
+.circle_ar .section2 a{
+    text-decoration: none;
+    margin: 5px auto;
+    padding: 20px;
+    color: #c4f9ae;
+    width: 95%;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    border: 1px solid #707070;
+    background: linear-gradient(to right, #19926f,  #0d4f3c);
+    font-family: book;
+}
+.circle_ar .section2 a{
+    font-family: changa;
+}
+
+.circle_ .section2 a:hover,
+.circle_ar .section2 a:hover{
+    background: linear-gradient(to right, #c4f9ae,  #c4f9ae);
+    color: #22594e;
+}
+.circle_ .section1{
+    position: absolute;
+    top:30%;
+    left: 100px;
+}
+.circle_ .section1 .circle1{
+    position: absolute;
+    top:30%;
+    left:10px;
+    z-index: 2;
+    width: 280px;
+}
+.circle_ .section1 .circle2{
+    position: absolute;
+    top:30%;
+    left: 10px;
+    z-index: 1;
+    width: 280px;
+}
+.circle_ .section1:hover.section1 .circle2{
+    z-index: 3;
+}
+.circle_ar .section1{
+    position: absolute;
+    top:30%;
+    right: 100px;
+}
+.circle_ar .section1 .circle1{
+    position: absolute;
+    top:30%;
+    right:10px;
+    z-index: 2;
+}
+.circle_ar .section1 .circle2{
+    position: absolute;
+    top:30%;
+    right: 10px;
+    z-index: 1;
+}
+.circle_ar .section1:hover.section1 .circle2{
+    z-index: 3;
+}
+@font-face{
+    font-family: book;
+    src:url('../../Assets/fonts/Book\ Antiqua\ Font.ttf')
+}
+
+
+/*-------------- media quary for responsive -----------*/
+@media only screen and (max-width: 1300px){
+    .circle_ .section2{
+        position: absolute;
+        right: 100px;
+    }
+    .circle_ar .section2{
+        position: absolute;
+        left: 100px;
+    }
+    .circle_ .section1{
+        position: absolute;
+        top:30%;
+        left: 50px;
+    }
+    .circle_ar .section1{
+        position: absolute;
+        top:30%;
+        right: 50px;
+    }
+    .circle_ .section1 .circle1,
+    .circle_ar .section1 .circle1{
+        width: 250px;
+    }
+    .circle_ .section1 .circle2,
+    .circle_ar .section1 .circle2{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 1165px){
+    .circle_ .section2{
+        width: 650px;
+        height: 520px;
+        padding-top: 440px;
+        right: 90px;
+    }
+    .circle_ar .section2{
+        width: 650px;
+        height: 520px;
+        padding-top: 360px;
+        left: 90px;
+        top: 70px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .circle_,.circle_ar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .circle_ .section2,
+    .circle_ .section1{
+        position: relative;
+    }
+    .circle_ar .section2,
+    .circle_ar .section1{
+        position: relative;
+    }
+    .circle_ .section2, .circle_ar .section2{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top:300px
+    }
+    .circle_ .section1{
+        position: relative;
+        left: -130px;
+        top: 20px;
+    }
+    .circle_ar .section1{
+        position: relative;
+        right:-130px;
+        top: 20px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .circle_ .section1{
+        position: relative;
+        left: -110px;
+        top: 50px;
+    }
+    .circle_ar .section1{
+        position: relative;
+        right: -110px;
+        top: 50px;
+    }
+    .circle_ .section1 .circle1,
+    .circle_ar .section1 .circle1{
+        width: 200px;
+    }
+    .circle_ .section1 .circle2,
+    .circle_ar .section1 .circle2{
+        width: 200px;
+    }
+    .circle_ .section2,
+    .circle_ar .section2{
+        width: 550px;
+        height: 520px;
+        padding-top: 340px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 40px;
+    }
+    .circle_ .section2 a{
+        font-size: 20px;
+    }
+    .circle_ar .section2 a{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .circle_ .section2,
+    .circle_ar .section2{
+        width: 450px;
+        height: 520px;
+        padding-top: 320px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 35px;
+    }
+    .circle_ .section2 a,
+    .circle_ar .section2 a{
+        font-size: 18px;
+    }
+    .circle_ar .section2{
+        padding-top: 280px;
+    }
+}
+@media only screen and (max-width:470px){
+    .circle_ .section1 .circle1,
+    .circle_ar .section1 .circle1{
+        width: 180px;
+    }
+    .circle_ .section1 .circle2,
+    .circle_ar .section1 .circle2{
+        width: 180px;
+    }
+    .circle_ .section2,
+    .circle_ar .section2{
+        width: 380px;
+        height: 520px;
+        padding-top: 120px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 30px;
+    }
+    .circle_ar .section2{
+        padding-top: 80px;
+    }
+    .circle_ .section2 a,
+    .circle_ar .section2 a{
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .circle_ .section1{
+        position: relative;
+        left: -100px;
+        top: 80px;
+    }
+    .circle_ar .section1{
+        position: relative;
+        right:-100px;
+        top: 80px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .circle_ .section2,
+    .circle_ar .section2{
+        width: 330px;
+        height: 520px;
+        padding-top: 170px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 30px;
+    }
+    .circle_ar .section2{
+        padding-top: 80px;
+    }
+}
+

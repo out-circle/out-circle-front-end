@@ -1,0 +1,127 @@
+.profile_handicraft{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+}
+.profile_handicraft .back {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.profile_handicraft .back img{
+    width: 30px;
+    height: 30px;
+}
+.profile_handicraft .back span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.back:hover.back span{
+    opacity: 1; 
+    visibility: visible;
+}
+.profile_handicraft section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    right: 250px;
+    top:30px;
+}
+
+.profile_handicraft section header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2AF6BC;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    border: 1px solid #707070;
+    opacity:0.68;
+}
+
+.profile_handicraft section header .icon{
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+}
+.profile_handicraft section header .text{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.profile_handicraft .section2 img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height:100%;
+    width: 27%;
+}
+.profile_handicraft section .body{
+    background-color: #22594e;
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid #707070;
+    padding: 20px;
+    height: 460px;
+}
+.profile_handicraft section .body .information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #c4f9ae;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+.profile_handicraft section .body .information input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background:none;
+    border: none;
+    color:#fff;
+    font-size: 20px;
+}
+.profile_handicraft section .body .information input:focus{
+    outline: none;
+}
+.profile_handicraft section .body .information img{
+    width: 25px;
+}
+.profile_handicraft section .body .information p{
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    position: relative; 
+    top:6px 
+}
+
+.profile_handicraft section .body .footer button{
+    background-color: #000;
+    border:none;
+    border:2px solid #199370;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+.profile_handicraft section .body .footer button:hover{
+    letter-spacing: 1px;
+}

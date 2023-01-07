@@ -1,0 +1,96 @@
+.welcome{
+    background-color: #CDEBC0;
+    opacity: 0.90;
+    width: 66%;
+    height: 460px;
+    position: absolute;
+    z-index: 100000;
+    text-align: left;
+    right: 100px;
+    top:140px;
+    padding:30px 50px;
+    overflow-y: scroll;
+    border: 1px solid #707070;
+}
+
+.welcome2{
+    background-color: #CDEBC0;
+    opacity: 0.90;
+    width: 67%;
+    height: 460px;
+    position: absolute;
+    z-index: 100000;
+    text-align: center;
+    left: 60px;
+    top:140px;
+    padding:30px 50px;
+    overflow-y: scroll;
+    border: 1px solid #707070;
+}
+
+.welcome .bar p{
+    font-family: book;
+    font-size: 23px;
+}
+.welcome2 .bar{
+    line-height: 36px;
+}
+.welcome2 .bar .circle_{
+    font-size: 30px;
+    margin: 20px auto;
+}
+.welcome2 .bar p{
+    font-size: 23px;
+    font-family: 'El Messiri', sans-serif;
+    margin-bottom: 25px;
+}
+
+.welcome .icon ,
+.welcome2 .icon{
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top:5px;
+    cursor: pointer;
+}
+
+
+.welcome::-webkit-scrollbar ,
+.welcome2::-webkit-scrollbar {
+   display: none;
+ }
+ .welcome,
+ .welcome2{
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }
+
+
+@font-face {
+    font-family:book;
+    src: url("../../Assets/fonts/Book\ Antiqua\ Font.ttf");
+}
+
+@media only screen and (max-width: 1300px){
+    .welcome , 
+    .welcome2{
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .welcome , .welcome2{
+        width: 80%;
+        top:160px;
+        height: 600px;
+        padding:30px;
+    }
+    .welcome2 .bar p{
+        font-size: 18px;
+    }
+    .welcome .bar p{
+        font-size: 20px;
+    }
+}

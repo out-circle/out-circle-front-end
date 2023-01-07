@@ -1,0 +1,266 @@
+.whyus{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+}
+.whyus .background{
+    position: absolute;
+    width: 110%;
+    left:-60px;
+    height: 120%;
+    top:30px;
+}
+
+.whyus .logo img{
+    width: 120px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    z-index: 40;
+}
+.whyus .logo_ar img{
+    width: 120px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    z-index: 40;
+}
+.whyus .back a{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 40;
+}
+.whyus .back_ar a{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 40;
+}
+.whyus  .back a img{
+    width: 30px;
+    height: 30px;
+}
+.whyus  .back_ar a img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+}
+.whyus .back a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    right: -160px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    transition: all 0.6s ease;
+    border-right: none;
+    position: relative;
+}
+.whyus .back_ar a span{
+    border: 2px solid white;
+    padding: 5px 5px 8px 95px;
+    position: relative;
+    left: -170px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.whyus  .back a:hover span{
+    opacity: 1;
+    visibility: visible;
+    right: -50px;
+}
+.whyus  .back_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left: -50px;
+}
+.whyus .main{
+    /* background-image: url('../../images/Group\ 384.png'); */
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    margin: 10px auto;
+    padding: 10px 50px;
+    left:7%;
+    top:50px;
+}
+
+.whyus .main h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0px 2px 2px white;
+    letter-spacing: 2px;
+    font-family: changa;
+    font-weight: 600;
+}
+
+.whyus .main .text{
+    color:#C4F9AE;
+    background-color: #171717;
+    width: 1100px;
+    margin: 20px auto;
+    text-align: left;
+    opacity: 0.75;
+    border-radius: 90px;
+    padding: 30px 50px;
+    line-height: 28px;
+    height: 450px;
+    overflow-y: scroll;
+    font-family: book;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.whyus .main .text_ar{
+    color:#C4F9AE;
+    background-color: #171717;
+    width: 1100px;
+    margin: 20px auto;
+    text-align: right;
+    opacity: 0.55;
+    border-radius: 90px;
+    padding: 30px 50px;
+    line-height: 28px;
+    height: 450px;
+    overflow-y: scroll;
+    font-family: 'Almarai', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+ 
+.whyus .main .text::-webkit-scrollbar ,
+.whyus .main .text_ar::-webkit-scrollbar {
+    display: none;
+  }
+  .whyus .main .text,
+  .whyus .main .text_ar{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+@font-face{
+    font-family: book;
+    src: url("../../Assets/fonts/Book\ Antiqua\ Font.ttf");
+}
+
+
+/*------------ add responsive -------------*/
+@media only screen and (max-width: 1300px){
+    .whyus .main .text{
+        width: 1000px;
+    }
+    .whyus .main .text_ar{
+        width: 1000px;
+    }
+}
+@media only screen and (max-width: 1160px){
+    .whyus .main .text ,
+    .whyus .main .text_ar{
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 978px){
+    .whyus .background ,
+    .whyus .background_ar{
+        display: none;
+    }
+    .whyus .main .text ,
+    .whyus .main .text_ar{
+        max-width: 800px;
+        opacity: 1;
+    }
+    .whyus .main {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .whyus .back a ,
+    .whyus .back_ar a{
+        display: none;
+    }
+}
+@media only screen and (max-width: 880px){
+    .whyus .main .text ,
+    .whyus .main .text_ar{
+        max-width: 600px;
+        border-radius: 50px;
+        font-style: 18px;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: 670px){
+    .whyus .main .text ,
+    .whyus .main .text_ar{
+        max-width: 500px;
+        border-radius: 40px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .whyus .logo img ,
+    .whyus .logo_ar img{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .whyus .main .text{
+        max-width: 400px;
+        border-radius: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .whyus .main .text_ar{
+        max-width: 400px;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .whyus .main h2{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .whyus .logo img ,
+    .whyus .logo_ar img{
+        width: 80px;
+    }
+}
+@media only screen and (max-width: 410px){
+    .whyus .main .text{
+        max-width: 330px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .whyus .main .text_ar{
+        max-width: 330px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .whyus .main {
+        margin-top: 30px;
+    }
+    .whyus .main h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+}

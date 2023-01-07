@@ -1,0 +1,145 @@
+.handicraft{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.handicraft .header2 a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.handicraft .header2_ar a{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.handicraft .header2 a img{
+    width: 30px;
+}
+.handicraft .header2_ar a img{
+    width: 30px;
+    position:absolute ;
+    left: 0;
+}
+.handicraft .header2 a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.handicraft .header2_ar a span{
+    border: 2px solid white;
+    padding: 5px 5px 5px 85px;
+    position: relative;
+    left: -50px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.handicraft .header2 a:hover span , 
+.handicraft .header2_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+
+.handicraft .header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top:10px;
+}
+.handicraft .header1_ar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top:10px;
+}
+.handicraft .header1 a img{
+    width: 30px;
+    position: absolute;
+    right: 10px;
+}
+.handicraft .header1_ar a img{
+    width: 30px;
+    margin: 0px 10px;
+    position: absolute;
+    left: 10px;
+}
+.handicraft .header1 a span{
+    border: 2px solid white;
+    padding: 5px 100px 10px 10px;
+    position: relative;
+    right: -230px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    transition: all 0.6s ease;
+    border-right: none;
+    font-size: 15px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.handicraft .header1_ar .home_{
+    margin-top: 10px;
+}
+.handicraft .header1_ar a span{
+    border: 2px solid white;
+    padding: 5px 10px 5px 100px;
+    position: relative;
+    left: -220px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+
+.handicraft .header1_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left: -35px;
+}
+.handicraft .header1 a:hover span{
+    opacity: 1;
+    visibility: visible;
+    right: -50px;
+}
+
+@media only screen and (max-width: 1050px){
+    .handicraft{
+        position: relative;
+        height: 900px;
+        width: 100%;
+    }
+    .handicraft .header1_ar{
+        position: absolute;
+        left: 0px;
+        z-index: 11111;
+    }
+    .handicraft .header1{
+        position: absolute;
+        right: 0px;
+        z-index: 11111;
+    }
+}
+@media only screen and (max-width: 600px){
+    .handicraft .header2 a,
+    .handicraft .header2_ar a{
+        display: none;
+    }
+}

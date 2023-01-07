@@ -1,0 +1,33 @@
+
+.card_{
+    position: relative;
+    width: 150px;
+    height: 310px;
+    margin: 10px auto;
+    border-radius: 60px;
+}
+.bodyCard{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(42, 40, 40);
+    opacity: 0.9;
+    bottom: 30px;
+    left: 15px;
+    border: 1px solid gray;
+}
+.card_ img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 1px solid #707070;
+}
+.bodyCard p{
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+    font-size: 12px;
+    border-top:2px solid white ;
+    border-bottom: 2px solid white;
+    margin: 5px 10px 0px 10px;
+}

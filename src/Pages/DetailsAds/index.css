@@ -1,0 +1,79 @@
+.details_ads{
+    background-color: #0a382b;
+    width: 100%;
+    height: 100vh;
+}
+.rectangle{
+    width: 65%;
+    background-color:#199370;
+    height: 85%;
+    margin: auto;
+    position: relative;
+    top: 46px;
+    border-radius: 80px ;
+    border: 1px solid #707070;
+    margin:0px auto;
+    padding: 40px 100px;
+    overflow: scroll;
+    text-align: center;
+}
+.rectangle .content{
+    border: 1px solid black;
+}
+.rectangle .image{
+    width: 500px;
+}
+.rectangle video{
+    width: 500px;
+    height: 400px;
+}
+
+/*-----------------------------*/
+@media only screen and (max-width: 1120px){
+    .rectangle{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 850px){
+    .rectangle{
+        width: 90%;
+        position: relative;
+        padding: 40px 20px;
+        border-radius: 40px;
+    }
+    .rectangle .content{
+        border: 1px solid black;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 620px){
+    .rectangle .image{
+        width: 400px;
+    }
+    .rectangle video{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 520px){
+    .rectangle .image{
+        width: 300px;
+    }
+    .rectangle video{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .rectangle .image{
+        width: 260px;
+    }
+    .rectangle video{
+        width: 260px;
+    }
+    .rectangle{
+        width: 90%;
+        position: relative;
+        padding: 40px 20px;
+        border-radius: 30px;
+        top: 56px;
+    }
+}

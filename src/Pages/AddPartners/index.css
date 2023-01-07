@@ -1,0 +1,267 @@
+.add_parteners{
+    background-color: #0a382b;
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.add_parteners header a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.add_parteners header .back_ar{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.add_parteners header .back_ar img{
+    position: absolute;
+    left:0px;
+}
+.add_parteners header a span{
+    border: 2px solid #fff;
+    padding: 5px 60px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    border-right: none;
+    transition: all 0.5s ease;
+}
+
+.add_parteners header .back_ar span{
+    border: 2px solid #fff;
+    padding: 5px 5px 8px 85px;
+    position: relative;
+    left: -150px;
+    border-radius: 0px 20px 20px 0px;
+    color: #fff;
+    border-left: none;
+    transition: all 0.5s ease;
+}
+
+.add_parteners header img{
+    width: 30px;
+}
+.add_parteners header a:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+
+.add_parteners header .back_ar:hover span{
+    visibility: visible;
+    opacity: 1;
+    left:-30px;
+}
+.add_parteners .register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    right: 180px;
+    top:40px;
+}
+
+.add_parteners .register_ar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    left: 180px;
+    top:40px;
+}
+.add_parteners .register header,
+.add_parteners .register_ar header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2AF6BC;
+    padding: 6px 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 17px;
+    position: relative;
+    border: 1px solid #707070;
+    opacity: 0.68;
+}
+.add_parteners .register header .icon,
+.add_parteners .register_ar header .icon{
+    position: absolute;
+    left: 20px;
+    font-size: 35px;
+    bottom: 0px;
+}
+.add_parteners .register header .text,
+.add_parteners .register_ar header .text{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Rubik Dirt',sans-serif;
+}
+.add_parteners .register_ar header .text{
+    font-family: changa;
+}
+.add_parteners .register .form-container ,
+.add_parteners .register_ar .form-container{
+    background-color: #22594e;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid #707070;
+    height: 480px;
+}
+.add_parteners .background2 img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 27%;
+    height: 100%;
+}
+.add_parteners .background2_ar img{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width: 27%;
+    height: 100%;
+}
+.register .body,
+.register_ar .body{
+    overflow: scroll;
+    height: 350px;
+}
+ .register .body::-webkit-scrollbar ,
+ .register_ar .body::-webkit-scrollbar {
+    display: none;
+  }
+  .register .body,
+  .register_ar .body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.add_parteners .register .form-container .input_ input{
+    padding: 8px 16px;
+    background: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+}
+.add_parteners .register_ar .form-container .input_ input{
+    width: 400px;
+    padding: 8px 16px;
+    border: 2px solid #c4f9ae;
+    background: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+.add_parteners .register_ar .form-container .input_{
+    font-size: 13px;
+    text-align: right;
+    font-family: 'Readex Pro', sans-serif;
+    width: 100%;
+}
+.add_parteners .register .form-container .input_{
+    font-size: 14px;
+    text-align: left;
+}
+.add_parteners .register_ar .form-container .input_ input{
+    font-size: 17px;
+    text-align: right;
+    font-family: 'Readex Pro', sans-serif;
+}
+.add_parteners .register_ar .form-container h3{
+    font-family: 'Readex Pro', sans-serif;
+}
+.add_parteners .form-container .footer button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 22px;
+    transition: all 0.5s ease;
+    border: 2px solid #199370;
+    margin-top: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1150px){
+    .add_parteners .background2 img ,
+    .add_parteners .background2_ar img{
+        display: none;
+    }
+    .add_parteners .register ,
+    .add_parteners .register_ar{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media only screen and (max-width: 740px){
+    .add_parteners header a ,
+    .add_parteners header .back_ar{
+        display: none;
+    }
+}
+@media only screen and (max-width: 680px){
+    .add_parteners .register{
+        width: 500px;
+    }
+    .add_parteners .register_ar{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 560px){
+    .add_parteners .register{
+        width: 400px;
+    }
+    .add_parteners .register_ar{
+        width: 400px;
+    }
+    .add_parteners .register .form-container .input_ input ,
+    .add_parteners .register_ar .form-container .input_ input{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 440px){
+    .add_parteners .register{
+        width: 330px;
+    }
+    .add_parteners .register_ar{
+        width: 330px;
+    }
+    .add_parteners .register .form-container .input_ input ,
+    .add_parteners .register_ar .form-container .input_ input{
+        width: 300px;
+        font-size: 16px;
+    }
+    .add_parteners .register .form-container,
+    .add_parteners .register_ar .form-container{
+        border-radius: 30px;
+    }
+    .add_parteners .form-container .footer button{
+        font-size: 17px;
+        padding: 5px 10px;
+        width: 130px;
+    }
+}

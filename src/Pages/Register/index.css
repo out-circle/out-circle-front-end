@@ -1,0 +1,381 @@
+.register_{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a382b;
+    overflow: hidden;
+}
+
+.register_ header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.register_ .header_ar .back{
+    position: absolute;
+    left:20px;
+    top: 20px;
+}
+.register_ .header_ar .home_{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+.register_ .header_ar .back img,
+.register_ .header_ar .home_ img{
+    position: absolute;
+    left: 0;
+}
+.register_ header img{
+    width:30px;
+    height: 30px;
+}
+.register_ header span{
+    border: 2px solid #fff;
+    padding: 5px 50px 5px 5px;
+    position: relative;
+    right: -38px;
+    border-radius: 20px 0% 0% 20px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    border-right: none;
+}
+.register_ .header_ar span{
+    border: 2px solid #fff;
+    padding: 5px 5px 8px 70px;
+    position: relative;
+    left: -150px;
+    border-radius: 0px 20px 20px 0%;
+    color: #fff;
+    transition: all 0.5s ease;
+    border-left: none;
+    z-index: 1000;
+}
+.register_ a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.register_ .header_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left:-30px;
+}
+
+.register_ .formRegister{
+    margin: 0px 50px 0px 0px;
+    border: 5px solid #7a9f71;
+    width: 700px;
+    text-align: center;
+    position: absolute;
+    right:150px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 50px;
+    top:40px;
+    height:550px;
+    overflow: hidden;
+}
+.register_ .formRegister_ar{
+    margin: 0px 50px 0px 0px;
+    border: 5px solid #7a9f71;
+    width: 700px;
+    text-align: center;
+    position: absolute;
+    left:150px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 50px;
+    top:40px;
+    height:550px;
+    overflow: hidden;
+}
+.register_ .formRegister .forms,
+.register_ .formRegister_ar .forms{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    position: relative;
+    align-items: center;
+    width: 500px;
+    left: 100px;
+}
+.register_ .formRegister .forms .first,
+.register_ .formRegister_ar .forms .first{
+    position:absolute;
+    transition: all 0.5s ease;
+    left: 0;
+}
+.register_ .formRegister .forms .second,
+.register_ .formRegister_ar .forms .second{
+    position:absolute;
+}
+.register_ .formRegister .forms .three,
+.register_ .formRegister_ar .forms .three{
+    position:absolute;
+    top: 130px;
+    left: 120px;
+}
+.register_ .formRegister .forms .four,
+.register_ .formRegister_ar .forms .four{
+    position:absolute;
+    bottom: 235px;
+    left: 10px;
+}
+.register_ .formRegister .forms .fife,
+.register_ .formRegister_ar .forms .fife{
+    position:absolute;
+    bottom: 235px;
+    left: 230px;
+}
+.register_ .formRegister .forms .fife,
+.register_ .formRegister_ar .forms .fife{
+    position:absolute;
+}
+ .register_ .formRegister .forms ._circle,
+ .register_ .formRegister_ar .forms ._circle{
+    position: absolute;
+    top:0;
+    left: 0px;
+    z-index: 11;
+    width: 220px;
+}
+.register_ .formRegister .forms ._circlehover,
+.register_ .formRegister_ar .forms ._circlehover{
+    position: absolute;
+    top:0;
+    left: 0px;
+    z-index: 1;
+    transition: all 0.5s ease;
+    width: 220px;
+} 
+.register_ .formRegister .forms .first:hover.first ._circlehover,
+.register_ .formRegister .forms .second:hover.second ._circlehover,
+.register_ .formRegister .forms .three:hover.three ._circlehover,
+.register_ .formRegister .forms .four:hover.four ._circlehover,
+.register_ .formRegister .forms .fife:hover.fife ._circlehover{
+    z-index: 22;
+}
+.register_ .formRegister_ar .forms .first:hover.first ._circlehover,
+.register_ .formRegister_ar .forms .second:hover.second ._circlehover,
+.register_ .formRegister_ar .forms .three:hover.three ._circlehover,
+.register_ .formRegister_ar .forms .four:hover.four ._circlehover,
+.register_ .formRegister_ar .forms .fife:hover.fife ._circlehover{
+    z-index: 22;
+}
+ 
+
+.register_ .backgroundRegister img{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: -2px;
+    overflow: hidden;
+}
+.register_ .backgroundRegister_ar img{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    overflow: hidden;
+}
+@font-face {
+    font-family:Copperplate ;
+    src: url('../../Assets/fonts/COPRGTL.TTF');
+}
+
+
+@media only screen and (max-width: 1300px){
+    .register_ .backgroundRegister img,
+    .register_ .backgroundRegister_ar img{
+        display: none;
+    }
+    .register_ .formRegister{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top: -50px;
+    }
+    .register_ .formRegister_ar{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media only screen and (max-width: 830px){
+    .register_{
+        width: 100%;
+        height:100vh;
+        background-color: #0a382b;
+        overflow: hidden;
+    }
+    .register_ .formRegister{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top: -30px;
+        width: 500px;
+        height: 520px;
+    }
+    .register_ .formRegister_ar{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 500px;
+        height: 520px;
+    }
+    .register_ .formRegister .forms ._circle ,
+    .register_ .formRegister_ar .forms ._circle{
+        width: 180px;
+    }
+    .register_ .formRegister .forms ._circlehover,
+    .register_ .formRegister_ar .forms ._circlehover{
+        width: 180px;
+    }
+    .register_ .formRegister .forms .three ,
+    .register_ .formRegister_ar .forms .three{
+        position:absolute;
+        top: 150px;
+        left: 45px;
+    }
+    .register_ .formRegister .forms .second ,
+    .register_ .formRegister_ar .forms .second{
+        position: absolute;
+        left: 150px;
+        top:50px
+    }
+    .register_ .formRegister .forms .first ,
+    .register_ .formRegister_ar .forms .first{
+        position: absolute;
+        left: -60px;
+        top:50px;
+    }
+    .register_ .formRegister .forms .four ,
+    .register_ .formRegister_ar .forms .four{
+    position:absolute;
+    bottom: 230px;
+    left: -50px;
+}
+    .register_ .formRegister .forms .fife,
+    .register_ .formRegister_ar .forms .fife{
+    position:absolute;
+    bottom: 230px;
+    left: 140px;
+}
+}
+@media only screen and (max-width: 530px){
+    .register_ header{
+        display: none;
+    }
+    .register_{
+        width: 100%;
+        height:100vh;
+        background-color: #0a382b;
+        overflow: hidden;
+    }
+    .register_ .formRegister{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 100px;
+        width: 400px;
+        height: 470px;
+        border-radius: 30px;
+    }
+    .register_ .formRegister_ar{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 50px;
+        width: 400px;
+        height: 470px;
+        border-radius: 30px;
+    }
+    .register_ .formRegister .forms ._circle ,
+    .register_ .formRegister_ar .forms ._circle{
+        width: 150px;
+    }
+    .register_ .formRegister .forms ._circlehover ,
+    .register_ .formRegister_ar .forms ._circlehover{
+        width: 150px;
+    }
+    .register_ .formRegister .forms .three ,
+    .register_ .formRegister_ar .forms .three{
+        position:absolute;
+        top: 150px;
+        left: 10px;
+    }
+    .register_ .formRegister .forms .second ,
+    .register_ .formRegister_ar .forms .second{
+        position: absolute;
+        left: 100px;
+        top:50px
+    }
+    .register_ .formRegister .forms .first ,
+    .register_ .formRegister_ar .forms .first{
+        position: absolute;
+        left: -75px;
+        top:50px;
+    }
+    .register_ .formRegister .forms .four ,
+    .register_ .formRegister_ar .forms .four{
+    position:absolute;
+    bottom: 230px;
+    left: -60px;
+}
+    .register_ .formRegister .forms .fife,
+    .register_ .formRegister_ar .forms .fife{
+    position:absolute;
+    bottom: 230px;
+    left: 90px;
+}
+}
+@media only screen and (max-width: 420px){
+    .register_ .formRegister{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top: 10px;
+        width: 340px;
+        height: 470px;
+    }
+    .register_ .formRegister_ar{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top: 50px;
+        width: 340px;
+        height: 470px;
+    }
+    .register_ .formRegister .forms .three ,
+    .register_ .formRegister_ar .forms .three{
+        position:absolute;
+        top: 150px;
+        left: -16px;
+    }
+    .register_ .formRegister .forms .second ,
+    .register_ .formRegister_ar .forms .second{
+        position: absolute;
+        left:60px;
+        top:50px
+    }
+    .register_ .formRegister .forms .first ,
+    .register_ .formRegister_ar .forms .first{
+        position: absolute;
+        left: -97px;
+        top:50px;
+    }
+    .register_ .formRegister .forms .four ,
+    .register_ .formRegister_ar .forms .four{
+    position:absolute;
+    bottom: 245px;
+    left: -83px;
+}
+    .register_ .formRegister .forms .fife,
+    .register_ .formRegister_ar .forms .fife{
+    position:absolute;
+    bottom: 245px;
+    left: 50px;
+}
+}

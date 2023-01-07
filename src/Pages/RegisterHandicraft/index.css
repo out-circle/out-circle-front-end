@@ -1,0 +1,409 @@
+.register_handicraft{
+    background-color: #0a382b;
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.register_handicraft header a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.register_handicraft header .back_ar{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.register_handicraft header .back_ar img{
+    position: absolute;
+    left: 0;
+}
+.register_handicraft header a img{
+    width: 30px;
+}
+
+.register_handicraft header a span{
+    border: 2px solid white;
+    padding: 5px 50px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    border-right: none;
+}
+.register_handicraft header .back_ar span{
+    border: 2px solid white;
+    padding: 5px 8px 8px 90px;
+    position: relative;
+    left: -150px;
+    border-radius: 0% 20px 20px 0%;
+    color: white;
+    transition: all 0.5s ease;
+    border-left: none;
+}
+.register_handicraft header a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.register_handicraft header .back_ar:hover span{
+    opacity: 1;
+    visibility: visible;
+    left:-30px
+}
+
+.register_handicraft .register3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    right: 160px;
+    top:30px;
+}
+.register_handicraft .register3_ar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    left:160px;
+    top:30px;
+}
+.register_handicraft .register3 header,
+.register_handicraft .register3_ar header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2AF6BC;
+    padding: 6px 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 17px;
+    position: relative;
+    border: 1px solid #707070;
+    opacity:0.68;
+}
+
+.register_handicraft .register3 header .icon,
+.register_handicraft .register3_ar header .icon{
+    position: absolute;
+    left: 20px;
+    font-size: 35px;
+    bottom: 0px;
+}
+.register_handicraft .register3 header .text,
+.register_handicraft .register3_ar header .text{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Rubik Dirt',sans-serif;
+}
+.register_handicraft .register3_ar header .text{
+    font-family: changa;
+}
+
+.register_handicraft .register3 form,
+.register_handicraft .register3_ar form{
+    background-color: #22594e;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 60px;
+    border: 1px solid #707070;
+    height: 460px;
+} 
+.register_handicraft .register3 form .input_ .phone_number input,
+.register_handicraft .register3_ar form .input_ .phone_number input{
+    padding: 10px 50px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    height: 43px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.register_handicraft .register3_ar form .input_ .phone_number input{
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    text-align: right;
+}
+.register_handicraft .register3 form .input_ .input,
+.register_handicraft .register3_ar form .input_ .input{
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+}
+.register_handicraft .register3_ar form .input_ .input{
+    font-size: 17px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.register_handicraft .register3_ar form .input_ .input{
+    text-align: right;
+}
+
+.register_handicraft .register3 form .submit,
+.register_handicraft .register3_ar form .submit{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 22px;
+    transition: all 0.5s ease;
+    border: 2px solid #199370;
+    margin-top: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.register_handicraft .register3 form .submit:hover,
+.register_handicraft .register3_ar form .submit:hover{
+    letter-spacing: 1px;
+}
+
+.register_handicraft .register3 form .input_1,
+.register_handicraft .register3_ar form .input_1{
+    margin:20px auto ;
+    border: 2px solid #c4f9ae;
+    width: 400px;
+    border-radius: 10px;
+    padding: 0px 20px;
+
+}
+.register_handicraft .register3 form .input_1 label,
+.register_handicraft .register3_ar form .input_1 label{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 10px;
+cursor: pointer;
+}
+.register_handicraft .register3 form .input_1 label p,
+.register_handicraft .register3_ar form .input_1 label p{
+color:#fff;
+font-family: 'Readex Pro', sans-serif;
+}
+.register_handicraft .register3 .bar,
+.register_handicraft .register3_ar .bar{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 350px;
+}
+.register_handicraft .register3 .bar::-webkit-scrollbar,
+.register_handicraft .register3_ar .bar::-webkit-scrollbar  {
+    display: none;
+  }
+  .register_handicraft .register3 .bar,
+  .register_handicraft .register3_ar .bar{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.register_handicraft .register3 form .input_ span ,
+.register_handicraft .register3 form .input_ .phone_number span{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.register_handicraft .register3_ar form .input_ span ,
+.register_handicraft .register3_ar form .input_ .phone_number span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    padding-right: 10px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.register_handicraft .background2 img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:27%;
+    height: 100%;
+}
+.register_handicraft .background2_ar img{
+    position: absolute;
+    top:0;
+    right:0;
+    width:27%;
+    height: 100%;
+}
+
+
+/*------- media query responsive --------*/
+@media only screen and (max-width: 1050px){
+    .register_handicraft .background2 img,
+    .register_handicraft .background2_ar img{
+        display: none;
+    }
+    .register_handicraft .register3 ,
+    .register_handicraft .register3_ar{
+        width: 600px;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+    }
+}
+@media only screen and (max-width: 768px){
+    .register_handicraft .register3 header,
+    .register_handicraft .register3_ar header{
+        padding: 6px 15px;
+        width: 80%;
+        border-radius: 12px;
+}
+.register_handicraft .register3 header .icon,
+.register_handicraft .register3_ar header .icon{
+    position: absolute;
+    left: 20px;
+    font-size: 32px;
+    bottom: 1px;
+}
+.register_handicraft .register3 header .text,
+.register_handicraft .register3_ar header .text{
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+.register_handicraft .register3 form,
+.register_handicraft .register3_ar form{
+    width: 80%;
+    padding: 10px;
+    border-radius: 40px;
+} 
+.register_handicraft header a ,
+.register_handicraft header .back_ar{
+    display: none;
+}
+.register_handicraft .register3 form .submit,
+.register_handicraft .register3_ar form .submit{
+    padding: 5px 20px;
+    font-size: 18px;
+}
+}
+@media only screen and (max-width: 530px){
+
+    .register_handicraft .register3 ,
+    .register_handicraft .register3_ar{
+        top:50px;
+    }
+    .register_handicraft .register3 header,
+    .register_handicraft .register3_ar header{
+        padding: 6px 15px;
+        width: 60%;
+        border-radius: 9px;
+}
+.register_handicraft .register3 header .icon,
+.register_handicraft .register3_ar header .icon{
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    bottom: 1px;
+}
+.register_handicraft .register3 header .text,
+.register_handicraft .register3_ar header .text{
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+.register_handicraft .register3 form,
+.register_handicraft .register3_ar form{
+    width: 60%;
+    padding: 10px;
+    border-radius: 30px;
+}
+.register_handicraft .register3 form .input_ .input,
+.register_handicraft .register3_ar form .input_ .input{
+    padding: 8px 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.register_handicraft .register3 form .input_ .phone_number input,
+.register_handicraft .register3_ar form .input_ .phone_number input{
+    padding: 8px 10px;
+    width: 300px;
+    font-size: 16px;
+}
+.register_handicraft .register3 form .input_1,
+.register_handicraft .register3_ar form .input_1{
+    padding: 8px 10px;
+    width: 300px;
+    font-size: 16px;
+}
+}
+
+
+
+@media only screen and (max-width: 430px){
+    .register_handicraft .register3 header,
+    .register_handicraft .register3_ar header{
+        padding: 6px 15px;
+        width: 55%;
+        border-radius: 9px;
+}
+.register_handicraft .register3 header .icon,
+.register_handicraft .register3_ar header .icon{
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+    bottom: 1px;
+}
+.register_handicraft .register3 header .text,
+.register_handicraft .register3_ar header .text{
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+.register_handicraft .register3 form,
+.register_handicraft .register3_ar form{
+    width: 55%;
+    padding: 10px;
+    border-radius: 30px;
+}
+.register_handicraft .register3 form .input_ .input,
+.register_handicraft .register3_ar form .input_ .input{
+    padding: 8px 10px;
+    width: 300px;
+    font-size: 16px;
+}
+.register_handicraft .register3 form .input_ .phone_number input,
+.register_handicraft .register3_ar form .input_ .phone_number input{
+    padding: 8px 8px 8px 40px;
+    width: 300px;
+    font-size: 16px;
+}
+.register_handicraft .register3 form .input_1,
+.register_handicraft .register3_ar form .input_1{
+    padding: 8px 10px;
+    width: 300px;
+    font-size: 16px;
+}
+.register_handicraft .register3 form .submit,
+.register_handicraft .register3_ar form .submit{
+    padding: 5px 15px;
+    font-size: 16px;
+}
+}

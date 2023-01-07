@@ -1,0 +1,796 @@
+.message{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.audio .audio-recorder ,
+.audio_ar .audio-recorder{
+    background-color: #29d9a7;
+    box-shadow: none;
+    border-radius: 15px;
+}
+.message .back {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.message .back_ar {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.message .back img{
+    width: 30px;
+    height: 30px;
+}
+.message .back_ar img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left:0;
+}
+.message .back span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.message .back_ar span{
+    border: 2px solid white;
+    padding: 5px 5px 10px 85px;
+    position: relative;
+    left: -180px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.message .back:hover.back span{
+    opacity: 1; 
+    visibility: visible;
+}
+.message .back_ar:hover.back_ar span{
+    opacity: 1; 
+    visibility: visible;
+    left: -30px;
+}
+.message .div1{
+    text-align: center;
+    margin:0px auto 10px auto;
+    color: #c4f9ae;
+    font-size: 23px;
+    position: relative;
+    left:34%;
+}
+.message .div1_ar{
+    text-align: center;
+    margin:0px auto 10px auto;
+    color: #c4f9ae;
+    font-size: 23px;
+    position: relative;
+    left:20%;
+}
+.message .div1_ar p{
+    font-family: changa;
+    margin-top: 10px;
+    width: 660px;
+}
+.message .div1 p{
+    font-family: book;
+    margin-top: 10px;
+    width: 660px;
+    font-size: 25px;
+}
+.message .side,
+.message .side_ar{
+    height: 100%;
+}
+.message .side img{
+    width: 55vw;
+    height: 105%;
+    position: absolute;
+    top:-15px;
+    left:-5px;
+    font-family: PMingLiU;
+}
+.message .side_ar img{
+    width: 55vw;
+    height: 105%;
+    position: absolute;
+    top:-15px;
+    right:-5px;
+    font-family: PMingLiU;
+}
+.message .section2{
+    position: absolute;
+    right:100px;
+    top:95px;
+    width: 460px;
+}
+.message .section2_ar{
+    position: absolute;
+    left:100px;
+    top:95px;
+    width: 460px;
+}
+.message .section2 form textarea{
+    width: 87%;
+    height: 250px;
+    border-radius: 15px;
+    border: none;
+    border: 2px solid #20ab84;
+    padding: 10px;
+    background-color: #d3f9c3;
+    resize: none;
+}
+.message .section2_ar form textarea{
+    width: 87%;
+    height: 250px;
+    border-radius: 15px;
+    border: none;
+    border: 2px solid #20ab84;
+    padding: 10px;
+    background-color: #d3f9c3;
+    resize: none;
+    text-align: right;
+    position: relative;
+    left: 59px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.message .section2 form .upload,
+.message .section2_ar form .upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    margin-right: 30px;
+}
+.message .section2 form button,
+.message .section2_ar form button{
+    background: none;
+    border: none;
+}
+.message .section2 form button img
+{
+    width: 50px;
+    position: absolute;
+    right:0px;
+    top:100px;
+}
+.message .section2_ar form button img{
+    width: 50px;
+    position: absolute;
+    left:0px;
+    top:100px;
+}
+.message .section2 form .upload p{
+    background-color: #d2f9c3;
+    padding: 8px 10px;
+    text-align: center;
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid #20ab84;
+    position: relative;
+    right: 10px;
+}
+.message .section2_ar form .upload p{
+    background-color: #d3f9c3;
+    padding: 8px 10px;
+    text-align: center;
+    width: 87%;
+    border-radius: 20px;
+    border: 2px solid #20ab84;
+    position: relative;
+    left: 15px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.message .section2 form .upload img{
+    position: relative;
+    right: 0px;
+    bottom: 10px;
+}
+.message .section2 form .audio{
+    position: absolute;
+    right:5px;
+    top:180px;
+    z-index: 10;
+}
+
+.message .section2_ar form .audio_ar{
+    position: absolute;
+    left:0px;
+    top:180px;
+    z-index: 10;
+}
+
+.message .section2_ar form .upload img{
+    position: relative;
+    left: 0px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.message .section2_ar form .upload label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.message .section2 form .upload label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.message .section2 .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #269273;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 5px 0px 5px;
+    color: #fff;
+    margin-top: -20px;
+    opacity: 0.9;
+}
+.message .section2_ar .check{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+    background-color: #269273;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 10px 5px 10px;
+    color: #fff;
+    margin-top: -20px;
+    border: 1px solid #707070;
+    opacity: 0.9;
+}
+.message .section2_ar .check p{
+    font-size: 16px;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+    opacity: 1;
+}
+.message .section2 .check p{
+    text-align: center;
+    margin-top: 10px;
+    opacity: 1;
+    font-size: 15px;
+}
+.message .section2 .wages{
+    width: 100%;
+    margin-top: 15px;
+    color: #000;
+    background-color: #d2bc8e;
+    padding: 14px 4px;
+    border-radius: 15px;
+    font-family: arial;
+    text-align: center;
+    font-size: 14px;
+}
+.message .section2_ar .wages{
+    width: 100%;
+    margin-top: 20px;
+    color: #000;
+    background-color: #d2bc8e;
+    padding: 0px 20px;
+    border-radius: 15px;
+    font-family: arial;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Readex Pro', sans-serif;
+}
+ @font-face {
+    font-family: "PMingLiU";
+    src: url('../../Assets/fonts/pmingliu.ttf');
+ }
+ @font-face {
+    font-family: "arial";
+    src: url('../../Assets/fonts/arial.ttf');
+ }
+ @font-face {
+    font-family: "book";
+    src: url('../../Assets/fonts/Book\ Antiqua\ Font.ttf');
+ }
+.fff{
+    display: none;
+}
+.sss{
+    display: none;
+}
+
+/*------------------------*/
+.message2{
+    background-color: #0a382b;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.message2 .head{
+    background-color:#105c48;
+    border-radius: 0px 0px 50% 50%;
+    height: 220px;
+    position: relative;
+    border: 1px solid #707070;
+}
+.message2 .head img{
+    position: absolute;
+    right:10px;
+    top:10px;
+    width: 100px;
+}
+.message2 .head h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color:#c4f9ae;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 900;
+}
+.message2 .head .head2{
+    text-transform: uppercase;
+}
+.message2 .head p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 21px;
+    color:#c4f9ae;
+    font-family:changa;
+    font-weight: 400;
+}
+.message2 .head .address{
+    font-family: PMingLiU;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 21px;
+    color:#c4f9ae;
+    font-weight: 600;
+}
+.message2 .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+}
+.message2 .body_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+}
+.message2 .body div{
+    background-image: linear-gradient(to right, #20ab84, #105c48);
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-radius: 50px;
+    width: 90%;
+    text-align:right ;
+    height: 50px;
+    border: 1px solid #707070;
+}
+
+.message2 .body_ div{
+    background-image: linear-gradient(to right, #20ab84, #105c48);
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-radius: 50px;
+    width: 90%;
+    text-align:left;
+    height: 50px;
+    border: 1px solid #707070;
+}
+.message2 .body_ div p{
+    font-size: 16px;
+    color:#c4f9ae;
+    font-family: PMingLiU;
+    font-weight: 600;
+    line-height: 15px;
+}
+.message2 .body div p{
+    font-size: 14px;
+    color:#c4f9ae;
+    font-family: 'Readex Pro', sans-serif;
+    line-height: 15px;
+    font-weight: 300;
+}
+.message2 .content ,
+.message2 .content_en{
+    margin: 40px auto;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    position: relative;
+    height: 400px;
+}
+.message2 .content textarea ,
+.message2 .content_en textarea{
+    resize: none;
+    width: 85%;
+    height: 160px;
+    border: 2px solid #20ab84;
+    padding: 10px;
+    background-color: #d3f9c3;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    top:0%;
+    text-align: right;
+    font-family: 'Readex Pro', sans-serif;
+}
+.message2 .content_en textarea{
+    position: absolute;
+    left: 0px;
+    top:0%;
+}
+.message2 .content .textarea{
+    text-align: right;
+}
+.message2 .content_en .textarea{
+    text-align: left;
+}
+.message2 .content form label ,
+.message2 .content_en form label{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    top: 150px;
+    right: -15px;
+}
+.message2 .content_en form label{
+    position: absolute;
+    top: 150px;
+    left:-16px;
+}
+.message2 .content form label p ,
+.message2 .content_en form label p{
+    background-color: #d3f9c3;
+    padding: 8px 10px;
+    text-align: center;
+    width: 86%;
+    border-radius: 20px;
+    border: 2px solid #20ab84;
+    position: relative;
+    font-family: 'Readex Pro', sans-serif;
+}
+.message2 .content form label img{
+    position: relative;
+    left: -25px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.message2 .content_en form label img{
+    position: relative;
+    right: -20px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.message2 .content .audio_ar{
+    position: absolute;
+    top: 100px;
+    left: 5px;
+}
+.audio_cilp{
+    position: absolute;
+    top: 180px;
+    color:#0a382b;
+    left: 26px;
+}
+
+.message2 .content_en .audio_ar{
+    position: absolute;
+    top: 100px;
+    right: 5px;
+}
+
+.message2 .content form button{
+    position: absolute;
+    left: 0px;
+    background: none;
+    border: none;
+}
+
+.message2 .content_en form button{
+    position: absolute;
+    right: 0px;
+    background: none;
+    border: none;
+}
+
+.message2 .content form button img ,
+.message2 .content_en form button img{
+    width:45px ;
+}
+
+.message2 .content .check ,
+.message2 .content_en .check{
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #269273;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 10px 5px 10px;
+    color: #fff;
+    border: 1px solid #707070;
+    font-family: 'Readex Pro', sans-serif;
+    opacity: 0.9;
+}
+.message2 .content .check p ,
+.message2 .content_en .check p{
+    font-size: 14px;
+}
+.message2 .content .wages{
+    position: absolute;
+    width: 100%;
+    color: #000;
+    background-color: #d2bc8e;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-family: arial;
+    text-align: center;
+    font-size: 20px;
+    bottom: 30px;
+    left: 0px;
+}
+.message2 .content_en .wages_{
+    position: absolute;
+    width: 100%;
+    color: #000;
+    background-color: #d2bc8e;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-family: arial;
+    text-align: center;
+    font-size: 17px;
+    bottom: -10px;
+    left: 0px;
+}
+
+/*------------------- media query --------------*/
+@media only screen and (max-width: 1230px){
+    .message .section2_ar{
+        position: absolute;
+        left:50px;
+        top:95px;
+        width: 460px;
+    }
+    .message .section2{
+        position: absolute;
+        right:50px;
+        top:95px;
+        width: 460px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    .message .section1 .side_ar{
+        display: none;
+    }
+    .message .section1 .side{
+        display: none;
+    }
+    .message .section2_ar{
+        position: relative;
+        top: 35%;
+        width:60%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        margin-top: 50px;
+    }
+    .message .section2{
+        position: relative;
+        top: 35%;
+        width:60%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        margin-top: 50px;
+    }
+    .message .section2_ar form textarea{
+        width: 87%;
+        height: 250px;
+        text-align: right;
+        position: relative;
+        left: 80px;
+    }
+    .message .section2_ar form .upload p{
+        background-color: #d3f9c3;
+        padding: 8px 10px;
+        text-align: center;
+        width: 87%;
+        border-radius: 20px;
+        border: 2px solid #20ab84;
+        position: relative;
+        left: 42px;
+    }
+    .message .div1_ar{
+        text-align: center;
+        margin-top:15px ;
+        color: #c4f9ae;
+        font-size: 23px;
+        position: relative;
+        right:0px;
+    }
+    .message .div1 p{
+        text-align: center;
+        margin-top:15px;
+        color: #c4f9ae;
+        font-size: 23px;
+        position: relative;
+        right: 150px;
+    }
+}
+@media only screen and (max-width: 840px){
+    .message .div1_ar{
+        text-align: center;
+        margin:0px auto 10px auto;
+        color: #c4f9ae;
+        font-size: 23px;
+        position: relative;
+        left:10%;
+    }
+}
+@media only screen and (max-width: 730px){
+    .message .div1_ar{
+        text-align: center;
+        margin:0px auto 10px auto;
+        color: #c4f9ae;
+        font-size: 20px;
+        position: relative;
+        left:5%;
+    }
+}
+@media only screen and (max-width: 540px){
+    .message2 .content .wages{
+        position: absolute;
+        bottom: 10px;
+        font-size: 16px;
+    }
+    .message2 .content_en .wages_{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 470px){
+    .message2 .content form label{
+        position: absolute;
+        left: 0px;
+    }
+    .message2 .content form label p{
+        position: relative;
+        left: 8px;
+    }
+    .message2 .content form label img{
+        position: relative;
+        left: -8px;
+    }
+    .message2 .head p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .message2 .content .wages{
+        position: absolute;
+        bottom: -20px;
+    }
+}
+@media only screen and (max-width: 470px){
+    .message2 .content .wages_{
+        position: absolute;
+        bottom: -50px;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .message2 .content{
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .message2 .head .logo{
+        width:70px;
+    }
+    .message2 .head .logo_ar{
+        width:80px;
+    }
+    .message2 .head .head2{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .message2 .head .address{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .message2 .head .address-ar{
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .message2 .content_en form label .uploaded{
+        font-size: 13px;
+    }
+    .message2 .head h2{
+        font-size: 30px;
+    }
+    .message2 .content_en .wages_{
+        position: absolute;
+        padding: 5px;
+        bottom: -30px;
+        left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    .message2 .content_en .wages_{
+        position: absolute;
+        padding: 5px;
+        bottom: -70px;
+        left: 0px;
+    }
+    .message2 .content ,
+    .message2 .content_en{
+        margin-bottom: 100px;
+    }
+    .message2 .content_en form label{
+        position: absolute;
+        top: 150px;
+        left:-10px;
+        font-size: 13.5px;
+    }
+    .message2 .content form label p{
+        font-size: 13px;
+    }
+    .message2 .content_en form label img{
+        position: relative;
+        right: -10px;
+        bottom: 5px;
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (max-width: 380px){
+    .message2 .content form label img{
+        position: relative;
+        left: 0px;
+        bottom: 5px;
+        cursor: pointer;
+    }
+    .message2 .content form button{
+        position: absolute;
+        left: -3px;
+        background: none;
+        border: none;
+    }
+    .message2 .content form label .uploaded{
+        font-size: 13px;
+    }
+}

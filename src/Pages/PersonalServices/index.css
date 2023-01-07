@@ -1,0 +1,127 @@
+.personalServices{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.personalServices header a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.personalServices header .back_ar{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.personalServices header a img{
+    width: 30px;
+}
+.personalServices header .back_ar img{
+    width: 30px;
+    position: absolute;
+    left: 0px;
+}
+.personalServices .link{
+    display: none;
+}
+.personalServices header .back span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.personalServices header .back_ar span{
+    border: 2px solid white;
+    padding: 5px 10px 10px 80px;
+    position: relative;
+    left: -180px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.personalServices header .back:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.personalServices header .back_ar:hover span{
+    opacity: 1;
+    visibility: visible;
+    left: -40px;
+}
+
+.personalServices .personal{
+    position: absolute;
+    top: 75%;
+    left: 9%;
+    font-size: 25px;
+    color:#c4f9ae;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family:algerian;
+}
+.personalServices .section2{
+    padding-top: 100px;
+    height: 550px;
+}
+.personalServices .personal_ar{
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    font-size: 25px;
+    color:#c4f9ae;
+    letter-spacing: 1px;
+    font-family: 'Lemonada', medium;
+}
+
+@font-face {
+    font-family: "algerian";
+    src: url('../../Assets/fonts/Algerian\ Regular.ttf');
+}
+
+@media only screen and (max-width: 1300px){
+    .personalServices .personal{
+        left: 2%;
+    }
+    .personalServices .personal_ar{
+        right: 4%;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .personalServices{
+        position: relative;
+        height: 900px;
+        width: 100%;
+    }
+    .personalServices .personal{
+        display: none;
+    }
+    .personalServices .personal_ar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .personalServices header a ,
+    .personalServices header .back{
+        display: none;
+    }
+    .personalServices .section2{
+        padding-top: 120px;
+    }
+}
+@media only screen and (max-width: 470px){
+    .personalServices .section2{
+        padding-top: 0px;
+        height: 460px;
+    }
+}

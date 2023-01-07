@@ -1,0 +1,121 @@
+.welcome_visitor{
+    background-color: #CDEBC0;
+    opacity: 0.90;
+    width:70%;
+    height: 300px;
+    position: absolute;
+    z-index: 100000;
+    text-align: left;
+    left:50%;
+    transform: translate(-50%);
+    top:150px;
+    padding:30px 50px;
+    overflow-y: scroll;
+    border: 1px solid #707070;
+}
+
+.welcome_visitor_{
+    background-color: #CDEBC0;
+    opacity: 0.90;
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    z-index: 100000;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    top:150px;
+    padding:30px 50px;
+    overflow-y: scroll;
+    border: 1px solid #707070;
+}
+
+.welcome_visitor .bar p{
+    font-family: book;
+    font-size: 23px;
+    margin-top: 30px;
+}
+.welcome_visitor_ .bar{
+    line-height: 36px;
+}
+.welcome_visitor_ .bar .circle_{
+    font-size: 30px;
+    margin: 20px auto;
+}
+.welcome_visitor_ .bar p{
+    font-size: 23px;
+    font-family: 'El Messiri', sans-serif;
+    margin-top: 38px;
+}
+
+.welcome_visitor .icon ,
+.welcome_visitor_ .icon{
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top:5px;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family:book;
+    src: url("../../Assets/fonts/Book\ Antiqua\ Font.ttf");
+}
+
+
+@media only screen and (max-width: 910px){
+    .welcome_visitor{
+        background-color: #CDEBC0;
+        opacity: 0.90;
+        width:70%;
+        left:50%;
+        transform: translate(-50%);
+        height: 430px;
+    }
+    .welcome_visitor_{
+        background-color: #CDEBC0;
+        opacity: 0.90;
+        width:70%;
+        left:50%;
+        transform: translate(-50%);
+        height: 430px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .welcome_visitor{
+        background-color: #CDEBC0;
+        opacity: 0.90;
+        width:80%;
+        left:50%;
+        transform: translate(-50%);
+        height: 430px;
+    }
+    .welcome_visitor_{
+        background-color: #CDEBC0;
+        opacity: 0.90;
+        width:80%;
+        left:50%;
+        transform: translate(-50%);
+        height: 450px;
+    }
+    .welcome_visitor .bar p{
+        font-family: book;
+        font-size: 18px;
+    }
+    .welcome_visitor_ .bar p{
+        font-family: 'El Messiri', sans-serif;
+        font-size: 18px;
+    }
+}
+
+.welcome_visitor::-webkit-scrollbar ,
+.welcome_visitor_::-webkit-scrollbar {
+   display: none;
+ }
+ .welcome_visitor,
+ .welcome_visitor_{
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }

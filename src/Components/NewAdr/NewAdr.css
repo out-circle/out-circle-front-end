@@ -1,0 +1,68 @@
+.news{
+    background-color: #0a382b;
+    width: 100%;
+    height: 100vh;
+}
+.news header{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.news header a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.login .back:hover.back span{
+    opacity: 1; 
+    visibility: visible;
+}
+.news .rectangle{
+    width: 65%;
+    background-color:#2AF6BC;
+    height: 85%;
+    margin: auto;
+    position: relative;
+    top: 46px;
+    border-radius: 20px 80px 80px 20px;
+    opacity: 0.48;
+    border: 1px solid #707070;
+    margin-right: 145px;
+}
+.news .side{
+    width: 30%;
+    background-color: #0a382b;
+    height: 100%;
+    border-radius: 0% 50% 50% 0%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.news .side img{
+    width: 150px;
+    margin: 40px;
+}
+.news .side span{
+    transform: rotate(-90deg);
+    margin-top: 60px;
+    font-size: 80px;
+    color: #2AF6BC;
+    font-weight: 700;
+    margin-left: 100px;
+    opacity: 0.48;
+}
+
+.news .side img{
+    position: relative;
+    right: 100px;
+}

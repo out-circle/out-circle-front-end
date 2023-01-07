@@ -1,0 +1,272 @@
+.ads{
+    background-color: #0a382b;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.ads header a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.ads header .back_ar{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.ads header .back_ar img{
+    position: absolute;
+    left:0px;
+}
+.ads header a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -170px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.ads header .back_ar span{
+    border: 2px solid white;
+    padding: 5px 5px 10px 85px;
+    position: relative;
+    left: -150px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+    font-family: 'Readex Pro', sans-serif;
+}
+.ads .back:hover.back span{
+    opacity: 1; 
+    visibility: visible;
+    right: -50px;
+}
+.ads .back_ar:hover.back_ar span{
+    opacity: 1; 
+    visibility: visible;
+    left: -50px;
+}
+.ads .rectangle{
+    width: 65%;
+    background-color:#199370;
+    height: 85%;
+    margin: auto;
+    position: relative;
+    top: 46px;
+    border-radius: 20px 80px 80px 20px;
+    border: 1px solid #707070;
+    margin-right: 145px;
+    padding-left: 80px;
+    overflow: scroll;
+}
+.ads .rectangle_ar{
+    width: 65%;
+    background-color:#199370;
+    height: 85%;
+    margin: auto;
+    position: relative;
+    top: 46px;
+    border-radius: 80px 20px 20px 80px;
+    border: 1px solid #707070;
+    margin-left: 145px;
+    padding: 40px 100px 40px 40px;
+    overflow: scroll;
+}
+.ads .rectangle .item{
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px ;
+    width: 720px;
+}
+.ads .rectangle_ar .item{
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px ;
+    width: 720px;
+}
+.ads .rectangle .image,
+.ads .rectangle_ar .image{
+    width: 700px;
+    height: 200px;
+}
+.ads .rectangle_ar .details{
+    font-family: 'Readex Pro', sans-serif;
+}
+.ads .side{
+    width: 30%;
+    background-color: #0a382b;
+    height: 100%;
+    border-radius: 0% 50% 50% 0%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ads .side_ar{
+    width: 30%;
+    background-color: #0a382b;
+    height: 100%;
+    border-radius: 50% 0% 0% 50%;
+    position: absolute;
+    top: 0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ads .side span{
+    transform: rotate(-90deg);
+    margin-top: 60px;
+    font-size: 80px;
+    color: #2AF6BC;
+    font-weight: 700;
+    margin-left: 100px;
+    opacity: 0.48;
+}
+.ads .side_ar span{
+    transform: rotate(-90deg);
+    margin-top: 60px;
+    font-size: 80px;
+    color: #2AF6BC;
+    font-weight: 700;
+    margin-right: 100px;
+    opacity: 0.48;
+    font-family: 'Readex Pro', sans-serif;
+}
+.ads .side img{
+    position: relative;
+    right: 100px;
+    width: 150px;
+    margin: 40px;
+}
+.ads .side_ar img{
+    position: relative;
+    left: 100px;
+    width: 150px;
+    margin: 40px;
+}
+
+@media only screen and (max-width: 1100px){
+    .ads .side,
+    .ads .side_ar{
+        display: none;
+    }
+    .ads .rectangle,
+    .ads .rectangle_ar{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    }
+    .ads .rectangle .item{
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-self: center;
+        position: relative;
+        right: 30px;
+    }
+    .ads .rectangle_ar .item{
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-self: center;
+        position: relative;
+        left: 30px;
+    }
+    .ads .rectangle .item img,
+    .ads .rectangle_ar .item img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .ads header a ,
+    .ads header .back_ar{
+        display: none;
+    }
+    .ads .rectangle .item{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+    .ads .rectangle_ar .item{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 20px;
+    }
+    .ads .rectangle,
+    .ads .rectangle_ar{
+        width: 90%;
+        overflow-x: hidden;
+        height: 70%;
+        position: relative;
+        top: 100px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .ads{
+        background-color: #0a382b;
+        width: 100%;
+        height: 1000px;
+        overflow: hidden;
+        position: relative;
+    }
+    .ads .rectangle,
+    .ads .rectangle_ar{
+        position: relative;
+        top:200px;
+        margin: 50px auto;
+    }
+    .ads .head{
+        background-color:#105c48;
+        position: absolute;
+        top:0px;
+        width: 100%;
+        height: 200px;
+        border-radius: 0px 0px 50% 50%;
+        text-align: center;
+    }
+    .ads .head img{
+        width: 100px;
+        position: absolute;
+        right: 10px;
+        top:10px;
+    }
+    .ads .head  .title{
+        font-size: 60px;
+        font-weight: 700;
+        color: #c4f9ae;
+        position: relative;
+        top:50px;
+        font-family: 'Readex Pro', sans-serif;
+    }
+}
+@media only screen and (max-width: 420px){
+    .ads .head img{
+        width: 80px;
+    }
+    .ads .head  .title{
+        font-size:50px;
+    }
+    .ads .head  .ar{
+        font-size:40px;
+        position: relative;
+        top:60px;
+    }
+    .ads .rectangle_ar .item{
+        width: 130%;
+        text-align: center;
+        position: relative;
+        left:-7px;
+    }
+}

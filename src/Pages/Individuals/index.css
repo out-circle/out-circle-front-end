@@ -1,0 +1,608 @@
+.individuals{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.individuals .individual{
+    position: absolute;
+    top: 27%;
+    left: 10%;
+}
+.individuals .individual .circle1{
+    width: 350px;
+    position: absolute;
+    top: 27%;
+    left: 0%;
+    z-index: 2;
+}
+.individuals .individual_ar .circle1{
+    width: 350px;
+    position: absolute;
+    top: 27%;
+    right: 0%;
+    z-index: 2;
+}
+.individuals .individual .circle2{
+    width: 350px;
+    position: absolute;
+    top: 27%;
+    left: 0%;
+    z-index: 1;
+}
+.individuals .individual_ar .circle2{
+    width: 350px;
+    position: absolute;
+    top: 27%;
+    right: 0%;
+    z-index: 1;
+}
+.individuals .individual:hover.individual .circle2{
+    z-index: 3;
+}
+.individuals .individual_ar:hover.individual_ar .circle2{
+    z-index: 3;
+}
+.individuals .individual_ar{
+    position: absolute;
+    top: 27%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.individuals .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top:50%
+}
+.individuals .services_ar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 50%;
+    top:50%
+}
+.individuals .services .career{
+    border: 3px solid #199370;
+    width: 600px;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    right: 150px;
+    padding: 20px;
+    border-radius: 45px;
+    text-decoration: none;
+    color: #c4f9ae;
+    height: 150px;
+}
+.individuals .services_ar .career{
+    border: 3px solid #199370;
+    width: 600px;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    padding: 20px;
+    border-radius: 45px;
+    text-decoration: none;
+    color: #c4f9ae;
+    height: 150px;
+}
+.individuals .services .career p ,
+.individuals .services .personal p{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: algerian;
+    position: relative;
+    top:20px;
+}
+.individuals .services_ar .career p ,
+.individuals .services_ar .personal p{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Lemonada', medium;
+    position: relative;
+    top:25px;
+}
+.individuals .services .personal{
+    border: 3px solid #199370;
+    width: 600px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    right: 150px;
+    padding: 20px;
+    border-radius: 45px;
+    text-decoration: none;
+    color: #c4f9ae;
+    height: 150px;
+}
+.individuals .services_ar .personal{
+    border: 3px solid #199370;
+    width: 600px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    left: 150px;
+    padding: 20px;
+    border-radius: 45px;
+    text-decoration: none;
+    color: #c4f9ae;
+    height: 150px;
+}
+.individuals .header2 a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.individuals .header2_ar a{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.individuals .header2 a img,
+.individuals .header2_ar a img{
+    width: 30px;
+}
+.individuals .header2_ar a img{
+    position: absolute;
+    left:0;
+}
+.individuals .header2 a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.individuals .header2_ar a span{
+    border: 2px solid white;
+    padding: 5px 5px 8px 85px;
+    position: relative;
+    left: -150px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.individuals .header2 a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.individuals .header2_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left: -30px;
+}
+
+.individuals .header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top:10px;
+}
+.individuals .header1_ar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top:10px;
+}
+.individuals .header1 a img{
+    width: 30px;
+    position: absolute;
+    right: 14px;
+}
+.individuals .header1_ar a img{
+    width: 30px;
+    position: absolute;
+    left: 14px;
+}
+.individuals .header1 a span{
+    border: 2px solid white;
+    padding: 5px 100px 10px 10px;
+    position: relative;
+    right: -230px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    transition: all 0.6s ease;
+    border-right: none;
+    font-size: 15px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.individuals .header1_ar a span{
+    border: 2px solid white;
+    padding: 5px 10px 5px 100px;
+    position: relative;
+    left: -220px;
+    border-radius: 0% 20px 20px 0%;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+    z-index: 1000;
+}
+
+.individuals .header1_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left:-50px;
+}
+.individuals .header1 a:hover span{
+    opacity: 1;
+    visibility: visible;
+    right:-50px;
+}
+
+@font-face {
+    font-family: "algerian";
+    src: url('../../Assets/fonts/Algerian\ Regular.ttf');
+}
+
+@media only screen and (max-width: 1300px){
+    .individuals .individual .circle1{
+        width: 300px;
+        position: absolute;
+        top: 28%;
+        left: 0%;
+        z-index: 2;
+    }
+    .individuals .individual_ar .circle1{
+        width: 300px;
+        position: absolute;
+        top: 28%;
+        right: 0%;
+        z-index: 2;
+    }
+    .individuals .individual .circle2{
+        width: 300px;
+        position: absolute;
+        top: 29%;
+        left: 0%;
+        z-index: 1;
+    }
+    .individuals .individual_ar .circle2{
+        width: 300px;
+        position: absolute;
+        top: 29%;
+        right: 0%;
+        z-index: 1;
+    }
+    .individuals .services_ar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 50%;
+        top:47%
+    }
+    .individuals .services .career ,
+    .individuals .services_ar .career{
+        width: 500px;
+        height: 130px;
+    }
+    .individuals .services .personal ,
+    .individuals .services_ar .personal{
+        width: 500px;
+        height: 130px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .individuals .services{
+        position: absolute;
+        left: 56%;
+        top:51%
+    }
+    .individuals .services_ar{
+        position: absolute;
+        right: 56%;
+        top:48%
+    }
+    .individuals .individual .circle1{
+        width: 250px;
+        position: absolute;
+        top: 40px;
+        left: 0%;
+        z-index: 2;
+    }
+    .individuals .individual_ar .circle1{
+        width: 250px;
+        position: absolute;
+        top: 40px;
+        right: 0%;
+        z-index: 2;
+    }
+    .individuals .individual .circle2{
+        width: 250px;
+        position: absolute;
+        top: 40px;
+        left: 0%;
+        z-index: 1;
+    }
+    .individuals .individual_ar .circle2{
+        width: 250px;
+        position: absolute;
+        top: 40px;
+        right: 0%;
+        z-index: 1;
+    }
+}
+@media only screen and (max-width: 850px){
+    .individuals{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .individuals .header1_ar{
+        position: absolute;
+        left: 0px;
+    }
+    .individuals .header1{
+        position: absolute;
+        right: 0px;
+    }
+    .individuals .services .career,
+    .individuals .services .personal{
+        width: 500px;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        border-radius: 20px;
+        height: 100px;
+        left:-60%;
+        top:-15px;
+    }
+    .individuals .services_ar .career,
+    .individuals .services_ar .personal{
+        width: 500px;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        border-radius: 20px;
+        height: 100px;
+        left:60%;
+        top:-15px;
+    }
+    .individuals .services .personal{
+        position: relative;
+        top:12px
+    }
+    .individuals .services_ar .personal{
+        position: relative;
+        top:12px
+    }
+    .individuals .services .career p ,
+    .individuals .services .personal p{
+        position: relative;
+        top:5px;
+        font-size: 30px;
+    }
+    .individuals .services_ar .career p ,
+    .individuals .services_ar .personal p{
+        position: relative;
+        top:5px;
+        font-size: 30px;
+    }
+    .individuals .individual {
+        position: relative;
+        left: -15%;
+        top: -48%;
+    }
+    .individuals .individual_ar {
+        position: relative;
+        right: -15%;
+        top: -48%;
+    }
+    .individuals .individual .circle1{
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        left: 0%;
+        z-index: 2;
+    }
+    .individuals .individual_ar .circle1{
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        right: 0%;
+        z-index: 2;
+    }
+    .individuals .individual .circle2{
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        left: 0%;
+        z-index: 1;
+    }
+    .individuals .individual_ar .circle2{
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        right: 0%;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .individuals .services .career,
+    .individuals .services .personal{
+        width: 400px;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        border-radius: 20px;
+        height: 100px;
+        left:-57%;
+        top:-15px;
+    }
+    .individuals .header2 a,
+    .individuals .header2_ar a{
+        display: none;
+    }
+    .individuals .services .personal{
+        position: relative;
+        top:12px
+    }
+    .individuals .services .career p ,
+    .individuals .services .personal p{
+        position: relative;
+        top:5px;
+        font-size: 25px;
+    }
+    .individuals .individual .circle1{
+        width: 180px;
+        position: absolute;
+        top: 40px;
+        left: 0%;
+        z-index: 2;
+    }
+    .individuals .individual .circle2{
+        width: 180px;
+        position: absolute;
+        top: 40px;
+        left: 0%;
+        z-index: 1;
+    }
+    .individuals .individual {
+        position: relative;
+        left: -18%;
+        top: -48%;
+    }
+}
+@media only screen and (max-width: 560px){
+    .individuals .services_ar .career,
+    .individuals .services_ar .personal{
+        width: 400px;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        border-radius: 20px;
+        height: 100px;
+        left:60%;
+        top:-15px;
+    }
+    .individuals .services_ar .personal{
+        position: relative;
+        top:22px
+    }
+    .individuals .services_ar .career p ,
+    .individuals .services_ar .personal p{
+        position: relative;
+        top:5px;
+        font-size: 25px;
+    }
+    .individuals .individual_ar .circle1{
+        width: 180px;
+        position: absolute;
+        top: 40px;
+        right: 0%;
+        z-index: 2;
+    }
+    .individuals .individual_ar .circle2{
+        width: 180px;
+        position: absolute;
+        top: 40px;
+        right: 0%;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .individuals .services .career,
+    .individuals .services .personal{
+        width: 340px;
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        border-radius: 20px;
+        height: 80px;
+        left:-57%;
+        top:-15px;
+        background: linear-gradient(to right, #19926f,  #0d4f3c);
+        border: 1px solid #707070;
+        transition: all 0.5s ease;
+    }
+    .individuals .services_ar .career,
+    .individuals .services_ar .personal{
+        width: 340px;
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        border-radius: 20px;
+        height: 80px;
+        left:57%;
+        top:-15px;
+        background: linear-gradient(to right, #19926f,  #0d4f3c);
+        border: 1px solid #707070;
+        transition: all 0.5s ease;
+    }
+    .individuals .services .career:hover ,
+    .individuals .services .personal:hover{
+        background: #c4f9ae;
+    }
+    .individuals .services_ar .career:hover ,
+    .individuals .services_ar .personal:hover{
+        background: #c4f9ae;
+    }
+    .individuals .services .career:hover.career p,
+    .individuals .services .personal:hover.personal p{
+        color: #19926f;
+    }
+    .individuals .services_ar .career:hover.career p,
+    .individuals .services_ar .personal:hover.personal p{
+        color: #19926f;
+    }
+    .individuals .services .personal{
+        position: relative;
+        top:12px
+    }
+    .individuals .services_ar .personal{
+        position: relative;
+        top:12px
+    }
+    .individuals .services .career p ,
+    .individuals .services .personal p{
+        position: relative;
+        top:10px;
+        font-size: 20px;
+    }
+    .individuals .services_ar .career p ,
+    .individuals .services_ar .personal p{
+        position: relative;
+        top:10px;
+        font-size: 20px;
+    }
+    .individuals .individual {
+        position: relative;
+        left: -23%;
+        top: -48%;
+    }
+    .individuals .individual_ar{
+        position: relative;
+        right: -23%;
+        top: -48%;
+    }
+}

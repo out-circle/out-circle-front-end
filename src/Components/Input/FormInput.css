@@ -1,0 +1,146 @@
+
+.scientific header a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.scientific header a img{
+    width: 30px;
+}
+
+.scientific header a span{
+    border: 2px solid white;
+    padding: 5px 50px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    border-right: none;
+}
+.scientific header a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+
+.scientific .register3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    right: 160px;
+    top:30px;
+}
+
+.scientific .register3 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2AF6BC;
+    padding: 6px 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 17px;
+    position: relative;
+    border: 1px solid #707070;
+    opacity:0.68;
+}
+
+.scientific .register3 header .icon{
+    position: absolute;
+    left: 20px;
+    font-size: 35px;
+    bottom: 0px;
+}
+.scientific .register3 header .text{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Rubik Dirt',sans-serif;
+}
+
+.scientific .register3 form{
+    background-color: #22594e;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 60px;
+    border: 1px solid #707070;
+    height: 460px;
+} 
+.scientific .register3 form .input_ .phone_number input{
+    padding: 10px 50px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    height: 43px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.scientific .register3 form .input_ .input{
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    border: 2px solid #c4f9ae;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+}
+
+.scientific .register3 form .submit{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    border: 2px solid #199370;
+    margin-top: 20px;
+}
+.scientific .register3 form .submit:hover{
+    letter-spacing: 1px;
+}
+
+.scientific .register3 form .input_1{
+    margin:20px auto ;
+    border: 2px solid #c4f9ae;
+    width: 400px;
+    border-radius: 10px;
+
+}
+.scientific .register3 form .input_1 label{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 10px;
+cursor: pointer;
+}
+.scientific .register3 form .input_1 label p{
+color:#fff;
+}
+.scientific .register3 .bar{
+    overflow: scroll;
+    height: 350px;
+}
+.scientific .register3 .bar::-webkit-scrollbar {
+    display: none;
+  }
+  .scientific .register3 .bar{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+.changepassword{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.changepassword header .back_ar{
+    position: absolute;
+    left: 20px;
+    top:20px;
+}
+.changepassword header .back_ar img{
+    width: 30px;
+    position: absolute;
+    left:0;
+}
+.changepassword header .back_ar span{
+    border: 2px solid white;
+    padding: 5px 5px 10px 85px;
+    position: relative;
+    left: -180px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.changepassword header .back_ar:hover.back_ar span{
+    opacity: 1;
+    visibility: visible;
+    left:-30px;
+}
+.changepassword .form{
+    background-color: #22594e;
+    width: 500px;
+    height: 540px;
+    text-align: center;
+    position: absolute;
+    right: 300px;
+    top: 40px;
+    border-radius: 50px;
+    padding: 20px 30px;
+    border: 1px solid #707070;
+    order: 2;
+}
+.changepassword .form_ar{
+    background-color: #22594e;
+    width: 500px;
+    height: 540px;
+    text-align: center;
+    position: absolute;
+    left: 300px;
+    top: 40px;
+    border-radius: 50px;
+    padding: 20px 30px;
+    border: 1px solid #707070;
+    order: 2;
+}
+.changepassword .form .header,
+.changepassword .form_ar .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.changepassword .form .header img,
+.changepassword .form_ar .header img{
+    width: 60px;
+    margin-left: 10px;
+    margin-bottom:10px ;
+}
+.changepassword .form .header h2{
+    color:black;
+    font-size: 30px;
+    font-family:Michroma ;
+}
+.changepassword .form_ar .header h2{
+    font-family: changa;
+    color: black;
+}
+
+.changepassword .section2 img{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 27%;
+    height: 100%;
+}
+.changepassword .section2-ar img{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: 27%;
+    height: 100%;
+}
+.changepassword .form form,
+.changepassword .form_ar form{
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+.changepassword .form form .feild,
+.changepassword .form_ar form .feild{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 20px auto;
+    justify-content: center;
+}
+.changepassword .form_ar form .body{
+    padding-top: 0px;
+}
+.changepassword .form form .feild label{
+    text-align: left;
+    color:#c4f9ae;
+    font-size: 20px;
+}
+.changepassword .form form .feild span{
+    text-align: left;
+    font-size: 14px;
+}
+.changepassword .form_ar form .feild span{
+    text-align:right;
+    font-size: 13px;
+    font-family:'Readex Pro', sans-serif ;
+}
+.changepassword .form_ar form div label{
+    text-align: right;
+    color:#c4f9ae;
+    font-size: 18px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.changepassword .form form .feild input,
+.changepassword .form_ar form div input{
+    background: none;
+    border: none;
+    border: 3px solid #c4f9ae;
+    padding: 10px;
+    border-radius: 15px;
+    color:#fff;
+}
+.changepassword .form_ar form .feild input{
+    text-align: right;
+}
+.changepassword .form form  button,
+.changepassword .form_ar form  button{
+    margin-top: 20px;
+    text-align: right;
+    background-color: black;
+    color: #c4f9ae;
+    border: none;
+    padding: 8px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+.changepassword .form form  button:hover,
+.changepassword .form_ar form  button:hover{
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.changepassword .form_ar form  button{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.changepassword .form form .body{
+    height: 300px;
+    overflow: scroll;
+}
+
+.changepassword .body{
+    overflow: scroll;
+    height: 300px;
+}
+.changepassword .body::-webkit-scrollbar,
+.changepassword .body_ar::-webkit-scrollbar {
+    display: none;
+  }
+  .changepassword .body,
+  .changepassword .body_ar{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@media only screen and (max-width: 1150px){
+    .changepassword .form{
+        position: absolute;
+        right: 150px;
+    }
+    .changepassword .form_ar{
+        position: absolute;
+        left: 150px;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .changepassword .form{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .changepassword .form_ar{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .changepassword .section2 img , .changepassword .section2-ar img{
+        display: none;
+    }
+}
+@media only screen and (max-width:630px){
+    .changepassword .form ,
+    .changepassword .form_ar{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 400px;
+        border-radius: 40px;
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .changepassword .form ,
+    .changepassword .form_ar{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 340px;
+        border-radius: 30px;
+        padding: 20px 10px;
+    }
+    .changepassword .form form  button,
+    .changepassword .form_ar form  button{
+        margin-top: 30px;
+    }
+    .changepassword .form .header h2{
+        font-size: 25px;
+    }
+    .changepassword .form form .feild label{
+        text-align: left;
+        color:#c4f9ae;
+        font-size: 17px;
+    }
+    .changepassword .form form .feild input,
+    .changepassword .form_ar form .feild input{
+        border-radius: 10px;
+    }
+    .changepassword .form form  button ,
+    .changepassword .form_ar form  button{
+        font-size: 17px;
+    }
+}

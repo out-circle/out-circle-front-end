@@ -1,0 +1,138 @@
+
+.scientific_{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scientific_ .header2 a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.scientific_ .header2_ar a{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.scientific_ .header2 a img{
+    width: 30px;
+}
+.scientific_ .header2_ar a img{
+    width: 30px;
+    position: absolute;
+    left: 0;
+}
+.scientific_ .header2 a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.scientific_ .header2_ar a span{
+    border: 2px solid white;
+    padding: 5px 5px 5px 85px;
+    position: relative;
+    left: -50px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.scientific_ .header2 a:hover span,
+.scientific_ .header2_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+
+.scientific_ .header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top:10px;
+}
+.scientific_ .header1_ar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top:10px;
+}
+.scientific_ .header1 a img{
+    width: 30px;
+    position: absolute;
+    right: 14px;
+}
+.scientific_ .header1_ar a img{
+    width: 30px;
+    position: absolute;
+    left:14px;
+}
+.scientific_ .header1 a span{
+    border: 2px solid white;
+    padding: 5px 100px 10px 10px;
+    position: relative;
+    right: -230px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    transition: all 0.6s ease;
+    border-right: none;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 14px;
+}
+.scientific_ .header1_ar a span{
+    border: 2px solid white;
+    padding: 5px 10px 5px 100px;
+    position: relative;
+    left: -220px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+
+.scientific_ .header1 a:hover span{
+    opacity: 1;
+    visibility: visible;
+    right: -50px;
+}
+.scientific_ .header1_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left: -50px;
+}
+@media only screen and (max-width: 1050px){
+    .scientific_{
+        position: relative;
+        height: 900px;
+        width: 100%;
+    }
+    .scientific_ .header1_ar{
+        position: absolute;
+        left: 0px;
+        z-index: 2222;
+    }
+    .scientific_ .header1 {
+        position: absolute;
+        right: 0px;
+        z-index: 2222;
+    }
+}
+@media only screen and (max-width: 600px){
+    .scientific_ .header2 a,
+    .scientific_ .header2_ar a{
+        display: none;
+    }
+}

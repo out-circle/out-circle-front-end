@@ -1,0 +1,168 @@
+.croporate{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.croporate .header2 a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.croporate .header2_ar a{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.croporate .header2 a img,
+.croporate .header2_ar a img{
+    width: 30px;
+}
+.croporate .header2_ar a img{
+    position: absolute;
+    left:0;
+}
+.croporate .header2 a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.croporate .header2_ar a span{
+    border: 2px solid white;
+    padding: 5px 5px 8px 85px;
+    position: relative;
+    left: -150px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.croporate .header2 a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.croporate .header2_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left: -30px;
+}
+
+.croporate .header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top:10px;
+}
+.croporate .header1_ar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top:10px;
+}
+.croporate .header1 a img{
+    width: 30px;
+    position: absolute;
+    right: 14px;
+}
+.croporate .header1_ar a img{
+    width: 30px;
+    position: absolute;
+    left: 14px;
+}
+.croporate .header1 a span{
+    border: 2px solid white;
+    padding: 5px 100px 10px 10px;
+    position: relative;
+    right: -230px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    transition: all 0.6s ease;
+    border-right: none;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 14px;
+}
+.croporate .header1_ar a span{
+    border: 2px solid white;
+    padding: 5px 10px 5px 100px;
+    position: relative;
+    left: -220px;
+    border-radius: 0% 20px 20px 0%;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+    z-index: 1000;
+}
+.croporate .header1 a:hover span{
+    opacity: 1;
+    visibility: visible;
+    right: -50px;
+}
+.croporate .header1_ar a:hover span{
+    opacity: 1;
+    visibility: visible;
+    left: -50px;
+}
+
+.croporate .header1 .partners{
+    position: absolute;
+    right: 14px;
+    font-size: 25px;
+    background-color: #aac9aa;
+    width: 30px;
+    height: 30px;
+    line-height: 50%;
+    border-radius: 50%;
+    top: 87px;
+    border: 2px solid #355b52;
+    color: #355b52;
+}
+
+.croporate .header1_ar .partners{
+    position: absolute;
+    left: 14px;
+    font-size: 25px;
+    background-color: #aac9aa;
+    width: 30px;
+    height: 30px;
+    line-height: 50%;
+    border-radius: 50%;
+    top: 87px;
+    border: 2px solid #355b52;
+    color: #355b52;
+}
+
+@media only screen and (max-width: 1050px){
+    .croporate{
+        position: relative;
+        height: 900px;
+        width: 100%;
+    }
+    .croporate .header1_ar{
+        position: absolute;
+        left: 0px;
+        z-index: 111;
+    }
+    .croporate .header1{
+        position: absolute;
+        right: 0px;
+        z-index: 111;
+    }
+}
+@media only screen and (max-width: 600px){
+    .croporate .header2 a,
+    .croporate .header2_ar a{
+        display: none;
+    }
+}

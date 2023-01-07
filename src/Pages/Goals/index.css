@@ -1,0 +1,341 @@
+.goals{
+    background-color: #0a382b;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+.goals .background{
+    position: absolute;
+    width: 105%;
+    left:0;
+    height: 120%;
+    top:20px;
+    z-index: 20;
+}
+.goals .logo img{
+    width:120px ;
+    position: absolute;
+    z-index: 40;
+    top:20px;
+    left:20px;
+}
+.goals .logo_ar img{
+    width: 120px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    z-index: 40;
+}
+
+.goals .back a {
+    position: absolute;
+    right: 20px;
+    top:40px;
+    z-index: 40;
+    }
+    .goals .back_ar a {
+        position: absolute;
+        left: 20px;
+        top:20px;
+        z-index: 40;
+    }
+.goals .back a img{
+    width: 30px;
+}
+.goals .back_ar a img{
+    width: 30px;
+    position: absolute;
+    left: 0;
+}
+.goals  .back a span{
+    border: 2px solid white;
+    padding: 5px 55px 5px 5px;
+    position: relative;
+    right: -50px;
+    border-radius: 20px 0% 0% 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    border-right: none;
+}
+.goals  .back_ar a span{
+    border: 2px solid white;
+    padding: 5px 10px 10px 85px;
+    position: relative;
+    left: -180px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    transition: all 0.6s ease;
+    border-left: none;
+}
+.goals .back a:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+.goals .back_ar a:hover span{
+    visibility: visible;
+    opacity: 1;
+    left:-30px;
+}
+.goals .main{
+    text-align: center;
+    position: absolute;
+    z-index: 30;
+    margin: 10px auto;
+    padding: 10px 50px;
+    left:7%;
+    top:40px;
+
+}
+
+.goals .main h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 0px 2px 3px white;
+    letter-spacing: 2px;
+    font-family: changa;
+    position: relative;
+    top: -20px;
+}
+.goals .main .text{
+    width: 1100px;
+    margin: 15px auto;
+    text-align: left;
+    color:#C4F9AE;
+    opacity: 1;
+    border-radius: 70px;
+    padding: 30px 50px;
+    line-height: 28px;
+    height: 400px;
+    overflow-y: scroll;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: book;
+    position: relative;
+    top:25px;
+}
+.goals .rectangle{
+    background-color: #171717;
+    width: 1100px;
+    height: 450px;
+    position: absolute;
+    top: 150px;
+    z-index: 29;
+    left: 10%;
+    border-radius: 80px;
+    opacity: 0.45;
+}
+.goals .main .text_ar{
+    width: 1100px;
+    margin: 15px auto;
+    color:#C4F9AE;
+    opacity: 1;
+    border-radius: 70px;
+    padding: 30px 50px;
+    line-height: 28px;
+    height: 400px;
+    overflow-y: scroll;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top:25px;
+    text-align:right;
+    font-family: 'Almarai', sans-serif;
+}
+ 
+.goals .main .text::-webkit-scrollbar,
+.goals .main .text_ar::-webkit-scrollbar {
+    display: none;
+  }
+  .goals .main .text,
+  .goals .main .text_ar{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+@font-face{
+    font-family: book;
+    src: url("../../Assets/fonts/Book\ Antiqua\ Font.ttf");
+}
+
+/*------------------ add responsive ---------*/
+@media only screen and (max-width: 1300px){
+    .goals .rectangle ,
+    .goals .rectangle_ar{
+        width: 1000px;
+    }
+    .goals .main .text ,
+    .goals .main .text_ar{
+        width: 1000px;
+    }
+}
+@media only screen and (max-width: 1160px){
+    .goals .rectangle ,
+    .goals .rectangle_ar{
+        width: 800px;
+    }
+    .goals .main .text ,
+    .goals .main .text_ar{
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 978px){
+    .goals .background ,
+    .goals .background_ar{
+        display: none;
+    }
+    .goals .rectangle ,
+    .goals .rectangle_ar{
+        display: none;
+    }
+    .goals .main{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .goals .back a ,
+    .goals .back_ar a{
+        display: none;
+    }
+    .goals .main .text{
+    width: 800px;
+    background-color: #171717;
+    margin: 20px auto;
+    text-align: left;
+    border-radius: 90px;
+    padding: 30px 50px;
+    line-height: 28px;
+    height: 420px;
+    overflow-y: scroll;
+    font-family: book;
+    font-size: 17px;
+    font-weight: 600;
+    }
+    .goals .main .text_ar{
+        background-color: #171717;
+        width: 800px;
+        margin: 15px auto;
+        color:#C4F9AE;
+        opacity: 1;
+        border-radius: 70px;
+        padding: 30px 50px;
+        line-height: 28px;
+        height: 420px;
+        overflow-y: scroll;
+        font-size: 17px;
+        font-weight: 400;
+        position: relative;
+        top:25px;
+        text-align:right;
+        font-family: 'Almarai', sans-serif;
+        }
+}
+
+@media only screen and (max-width: 880px){
+    .goals .main .text ,
+    .goals .main .text_ar{
+        max-width: 600px;
+        font-style: 18px;
+        font-weight: 400;
+        border-radius: 50px;
+    }
+}
+@media only screen and (max-width: 670px){
+    .goals .main .text ,
+    .goals .main .text_ar{
+        max-width: 500px;
+        font-style: 18px;
+        font-weight: 400;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 40px;
+    }
+    .goals .logo img ,
+    .goals .logo_ar img{
+        width: 90px;
+    }
+    .goals .main h2{
+        color: black;
+        font-size: 40px;
+        font-weight: 500;
+        text-shadow: 0px 2px 3px white;
+        letter-spacing: 0px;
+        font-family: changa;
+        position: relative;
+        top: 0px;
+    }
+}
+@media only screen and (max-width: 510px){
+    .goals{
+        background-color: #0a382b;
+        width: 100vw;
+        height: 100vh;
+    }
+    .goals .main{
+        margin-top: 20px;
+    }
+    .goals .main .text ,
+    .goals .main .text_ar{
+        max-width: 400px;
+        font-style: 16px;
+        font-weight: 400;
+        height: 400px;
+    }
+    .goals .logo img ,
+    .goals .logo_ar img{
+        width: 80px;
+    }
+    .goals .main h2{
+        color: black;
+        font-size: 33px;
+        font-weight: 400;
+        top: 20px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .goals .main .text ,
+    .goals .main .text_ar{
+        max-width: 330px;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 30px;
+        height: 400px;
+    }
+    .goals .main .text_ar{
+        font-family: 'Almarai', sans-serif;
+    }
+    .goals .main{
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .goals .main h2{
+        color: black;
+        font-size: 33px;
+        font-weight: 500;
+        top: 8px;
+    }
+    .goals .main .text {
+        max-width: 330px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .goals .main .text_ar{
+        max-width: 330px;
+        font-size: 16px;
+        font-weight: 300;
+        height: 400px;
+    }
+    .goals .main{
+        margin-top: 20px;
+    }
+    .goals .main_ar{
+        margin-top:60px;
+    }
+}
